@@ -1062,26 +1062,55 @@ tr:hover td{background:var(--cream)}
 <!-- ════ S5: 9.1 QUÉ MEDIMOS ════ -->
 <section id="s5" class="sec">
   <div class="cw">
-    <div class="eyebrow">⬡ 9.1 · Determinación de hormonas</div>
-    <h2 class="sec-title">¿Qué medimos y cómo?</h2>
-    <p class="sec-sub">Una hormona es una sustancia que actúa como mensajero químico para regular la homeostasis. En el laboratorio, su determinación en suero u orina nos permite evaluar el estado funcional de un eje endocrino. Pero hay matices importantes.</p>
+    <div class="eyebrow">⬡ 9.1 · Del eje al laboratorio</div>
+    <h2 class="sec-title">¿Qué determinamos y por qué?</h2>
+    <p class="sec-sub">Ya conoces el sistema endocrino: glándulas que producen hormonas, ejes jerárquicos de tres niveles y feedback negativo como regulador. Ahora entra en juego el laboratorio: <strong>¿cómo traducimos ese sistema en determinaciones analíticas?</strong></p>
 
-    <h3>El método: inmunoanálisis</h3>
-    <p>Para la determinación de las hormonas se usan <strong>varios tipos de inmunoanálisis en suero</strong> y a veces en orina. Se basan en la unión antígeno-anticuerpo específica para detectar y cuantificar concentraciones muy bajas.</p>
-
-    <div class="ib am"><div class="ib-t">⚠️ No existe un rango de referencia estándar universal</div>Los valores de referencia dependen de múltiples factores: <strong>edad, sexo, estado fisiológico</strong> (pubertad, embarazo, menopausia), <strong>momento del día o del ciclo menstrual</strong>, y también del <strong>método y del laboratorio</strong> que se use. No es posible indicar un intervalo estándar para estos análisis. Por ello es habitual solicitar <strong>determinaciones seriadas</strong> y comparar siempre con el mismo método y en el mismo laboratorio.</div>
-
-    <h3>¿Por qué no siempre basta con una sola determinación?</h3>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0">
-      <div style="background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:16px">
-        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:14px;color:var(--teal);margin-bottom:8px">🕐 Variación temporal</div>
-        <p style="font-size:13px;margin:0">Algunas hormonas tienen <strong>secreción pulsátil</strong> (GH), <strong>ritmo circadiano</strong> (cortisol: máximo a las 8h, mínimo a medianoche) o <strong>variación cíclica mensual</strong> (FSH, LH). Una medida aislada puede ser engañosa.</p>
+    <!-- Conexión explícita con lo aprendido -->
+    <div style="background:var(--teal-l);border:2px solid var(--teal);border-radius:16px;padding:20px 24px;margin-bottom:22px">
+      <div style="font-family:'Fraunces',serif;font-weight:700;font-size:15px;color:var(--teal);margin-bottom:12px">🔗 Conectando con el repaso: ¿qué medimos exactamente?</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;font-size:13px">
+        <div style="background:var(--white);border-radius:10px;padding:12px;border-left:3px solid var(--violet)">
+          <div style="font-weight:700;color:var(--violet);margin-bottom:5px">Del nivel 1 (hipotálamo)</div>
+          <div style="color:var(--muted)">Rara vez se miden directamente las hormonas liberadoras (TRH, CRH…). Son muy pequeñas, vida media muy corta y concentraciones ínfimas. Se infieren midiendo los niveles 2 y 3.</div>
+        </div>
+        <div style="background:var(--white);border-radius:10px;padding:12px;border-left:3px solid var(--teal)">
+          <div style="font-weight:700;color:var(--teal);margin-bottom:5px">Del nivel 2 (hipófisis)</div>
+          <div style="color:var(--muted)">Se miden las hormonas tróficas: <strong>TSH, ACTH, LH, FSH, GH, PRL</strong>. Son las que controlan las glándulas diana y cuya alteración localiza el fallo en el eje.</div>
+        </div>
+        <div style="background:var(--white);border-radius:10px;padding:12px;border-left:3px solid var(--green)">
+          <div style="font-weight:700;color:var(--green);margin-bottom:5px">Del nivel 3 (glándula diana)</div>
+          <div style="color:var(--muted)">Se miden las hormonas efectoras: <strong>T3/T4, cortisol, estradiol, testosterona, IGF-1</strong>. Reflejan la función real de la glándula y son las que ejercen el efecto biológico.</div>
+        </div>
       </div>
-      <div style="background:var(--white);border:1.5px solid var(--border);border-radius:12px;padding:16px">
-        <div style="font-family:'Fraunces',serif;font-weight:600;font-size:14px;color:var(--amber);margin-bottom:8px">🔬 Fracción medida</div>
-        <p style="font-size:13px;margin:0">Cuando medimos la hormona <strong>total</strong> (libre + unida a proteínas) podemos confundirnos si cambia la proteína transportadora. Por eso se prefiere medir la fracción libre cuando es posible (ej: <strong>FT4 en vez de T4 total</strong>).</p>
+      <div style="margin-top:12px;background:var(--white);border-radius:10px;padding:11px 14px;font-size:13px;color:var(--muted)">
+        💡 <strong>Regla de oro:</strong> siempre se miden <em>al menos</em> la trófica (nivel 2) y la efectora (nivel 3) juntas. Su relación es la que localiza el nivel del fallo, tal como vimos en el simulador del feedback.
       </div>
     </div>
+
+    <!-- Por qué fracción libre -->
+    <div style="background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:18px 22px;margin-bottom:16px">
+      <div style="font-family:'Fraunces',serif;font-weight:700;font-size:14px;color:var(--ink);margin-bottom:10px">🩸 ¿Fracción libre o total? — La lección del paso 3</div>
+      <p style="font-size:13.5px;color:var(--muted);margin-bottom:10px">En el repaso vimos que la hormona viaja por la sangre mayoritariamente <strong>unida a proteínas transportadoras (~95%)</strong> y solo una pequeña fracción libre (~5%) puede actuar sobre el receptor. Eso tiene consecuencias directas en lo que medimos:</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:13px">
+        <div style="background:var(--rose-l);border-radius:8px;padding:10px 13px;border-left:3px solid var(--rose)">
+          <strong style="color:var(--rose)">❌ Hormona TOTAL</strong><br>
+          <span style="color:var(--muted)">Libre + unida. Puede subir o bajar por cambios en la proteína transportadora (embarazo ↑TBG → ↑T4 total) aunque la función sea normal. <em>Puede engañar.</em></span>
+        </div>
+        <div style="background:var(--green-l);border-radius:8px;padding:10px 13px;border-left:3px solid var(--green)">
+          <strong style="color:var(--green)">✓ Fracción LIBRE</strong><br>
+          <span style="color:var(--muted)">Solo la biológicamente activa. Refleja la función real de la glándula independientemente de las proteínas. FT4, FT3, cortisol libre… <em>Es la que nos fiamos.</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- El método -->
+    <div style="background:var(--surf);border-radius:12px;padding:16px 20px;margin-bottom:16px">
+      <div style="font-family:'Fraunces',serif;font-weight:700;font-size:14px;color:var(--ink);margin-bottom:8px">🔬 El método: inmunoanálisis</div>
+      <p style="font-size:13.5px;color:var(--muted);margin:0">Las hormonas se determinan en suero (y a veces orina) mediante <strong>inmunoanálisis</strong>: técnicas basadas en la unión antígeno-anticuerpo específica. Se usan anticuerpos que reconocen la hormona de forma selectiva y permiten cuantificarla a concentraciones muy bajas (nanomoles-picomoles/L).</p>
+    </div>
+
+    <div class="ib am"><div class="ib-t">⚠️ No existe rango de referencia universal</div>Los valores de referencia dependen de: <strong>edad, sexo, estado fisiológico</strong> (pubertad, embarazo, menopausia), <strong>momento del día o del ciclo menstrual</strong>, y del <strong>método y laboratorio</strong> empleado. Por eso las determinaciones seriadas siempre se hacen con el mismo método y en el mismo laboratorio para poder compararlas.</div>
   </div>
 </section>
 
@@ -1089,28 +1118,103 @@ tr:hover td{background:var(--cream)}
 <section id="s6" class="sec">
   <div class="cw">
     <div class="eyebrow">⬡ 9.1 · Estrategias diagnósticas</div>
-    <h2 class="sec-title">Estrategias de determinación hormonal</h2>
-    <p class="sec-sub">Según el tipo de hormona y la pregunta clínica, se usan estrategias diferentes. Haz clic en cada una para ampliar.</p>
+    <h2 class="sec-title">¿Cuándo y cómo se determina cada hormona?</h2>
+    <p class="sec-sub">No todas las hormonas se miden igual. La estrategia depende de cómo se comporta el eje en el tiempo y de qué queremos saber: si hay exceso, si hay déficit, o si el eje responde correctamente al estímulo y al freno.</p>
+
+    <!-- Conexión con el feedback -->
+    <div style="background:var(--violet-l);border:2px solid var(--violet);border-radius:14px;padding:16px 20px;margin-bottom:20px">
+      <div style="font-family:'Fraunces',serif;font-weight:700;font-size:14px;color:var(--violet);margin-bottom:8px">🔗 Recuerda el simulador: estimulación y freno del eje</div>
+      <p style="font-size:13px;color:var(--muted);margin:0">En el simulador viste que el eje puede estar en estado basal, activado (estimulación) o frenado (feedback negativo). Las <strong>pruebas dinámicas</strong> reproducen exactamente eso en el laboratorio: forzamos artificialmente la estimulación o el freno y medimos si el eje responde como debe. Si no responde → hay patología.</p>
+    </div>
 
     <div class="acc-item">
-      <div class="acc-hd" onclick="toggleAcc(this)">1 · Determinaciones puntuales <span class="acc-ic">+</span></div>
-      <div class="acc-bd">Se usan para hormonas que tienen una <strong>concentración relativamente constante</strong> a lo largo del tiempo o cuya variación no es clínicamente relevante en ese contexto.<br><br>Ejemplo: TSH para cribado tiroideo. Una sola medida de TSH suele ser suficiente para orientar el diagnóstico.</div>
+      <div class="acc-hd" onclick="toggleAcc(this)">
+        <span>1 · Determinaciones puntuales — cuando la hormona es estable</span>
+        <span class="acc-ic">+</span>
+      </div>
+      <div class="acc-bd">
+        Se usan cuando la hormona tiene una concentración <strong>relativamente constante</strong> a lo largo del tiempo, o cuando una sola medida es suficiente para orientar el diagnóstico.<br><br>
+        <strong>¿Cuándo aplica en el eje?</strong> Para hormonas cuya variación fisiológica es pequeña o no relevante en el contexto clínico.<br><br>
+        <strong>Ejemplo:</strong> TSH para cribado tiroideo. La TSH varía poco durante el día y una sola medida refleja bien el estado del eje. Si está elevada → el eje lleva tiempo sin recibir feedback negativo suficiente → tiroides hipoactivo.
+        <div style="margin-top:10px;background:var(--surf);border-radius:8px;padding:9px 12px;font-size:12.5px;color:var(--muted)">📌 Conexión: la TSH es la hormona trófica del eje tiroideo (nivel 2). Una TSH elevada con T4 baja indica fallo en el nivel 3 (tiroides), tal como vimos en el simulador.</div>
+      </div>
     </div>
+
     <div class="acc-item">
-      <div class="acc-hd" onclick="toggleAcc(this)">2 · Determinaciones cíclicas (seriadas) <span class="acc-ic">+</span></div>
-      <div class="acc-bd">Para hormonas con <strong>concentración variable según el momento del día o del mes</strong> (FSH, LH) o para interpretar la evolución temporal (IGF-1 en el seguimiento de tratamiento con GH).<br><br>Son imprescindibles cuando se quiere comparar resultados: siempre <strong>mismo método, mismo laboratorio</strong>.</div>
+      <div class="acc-hd" onclick="toggleAcc(this)">
+        <span>2 · Determinaciones cíclicas o seriadas — cuando la hormona varía en el tiempo</span>
+        <span class="acc-ic">+</span>
+      </div>
+      <div class="acc-bd">
+        Para hormonas cuya concentración cambia de forma <strong>predecible a lo largo del día o del mes</strong>. Una medida aislada puede ser engañosa porque depende del momento.<br><br>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0;font-size:13px">
+          <div style="background:var(--surf);border-radius:8px;padding:9px 12px">
+            <strong style="color:var(--amber)">🕐 Ritmo circadiano</strong><br>
+            <span style="color:var(--muted)">Cortisol y ACTH: pico a las 8h, mínimo a medianoche. Hay que extraer a la hora correcta y repetir la determinación para comparar.</span>
+          </div>
+          <div style="background:var(--surf);border-radius:8px;padding:9px 12px">
+            <strong style="color:var(--violet)">📅 Variación cíclica mensual</strong><br>
+            <span style="color:var(--muted)">FSH y LH cambian enormemente según la fase del ciclo menstrual (recuerda la gráfica de la sección anterior). Se necesitan varias determinaciones en distintos días del ciclo.</span>
+          </div>
+        </div>
+        <div style="background:var(--surf);border-radius:8px;padding:9px 12px;font-size:12.5px;color:var(--muted);margin-top:4px">⚠️ Regla imprescindible: para comparar resultados seriados → siempre el <strong>mismo método y el mismo laboratorio</strong>.</div>
+      </div>
     </div>
+
     <div class="acc-item">
-      <div class="acc-hd" onclick="toggleAcc(this)">3 · Pruebas dinámicas de inducción o inhibición <span class="acc-ic">+</span></div>
-      <div class="acc-bd">Se provocan cambios en el eje para evaluar si responde correctamente:<br><br>• <strong>Prueba de supresión</strong>: se administra glucosa (o dexametasona) y se mide si la hormona baja. Si no baja → hipersecreción. <em>Ej: prueba de supresión con glucosa para GH en acromegalia.</em><br><br>• <strong>Prueba de estimulación</strong>: se administra un estímulo (glucagón, insulina, GnRH) y se mide si la hormona sube. Si no sube → déficit. <em>Ej: prueba de estimulación de GH para diagnóstico de enanismo hipofisario.</em></div>
+      <div class="acc-hd" onclick="toggleAcc(this)">
+        <span>3 · Pruebas dinámicas de estimulación o supresión — evaluar si el eje responde</span>
+        <span class="acc-ic">+</span>
+      </div>
+      <div class="acc-bd">
+        Son la aplicación directa del simulador de feedback al laboratorio. Se provoca artificialmente un cambio en el eje y se mide si responde correctamente. Si no responde → hay patología.<br><br>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0">
+          <div style="background:var(--green-l);border:1.5px solid var(--green);border-radius:10px;padding:13px">
+            <div style="font-family:'Fraunces',serif;font-weight:700;font-size:14px;color:var(--green);margin-bottom:8px">⬇ Prueba de SUPRESIÓN</div>
+            <div style="font-size:13px;color:var(--muted);line-height:1.7">
+              Se administra un <strong>estímulo inhibidor</strong> y se mide si la hormona baja.<br>
+              → Si <strong>no baja</strong>: hay hipersecreción autónoma (el feedback no funciona).<br><br>
+              <em>Ejemplo:</em> Prueba de supresión con glucosa para GH. Se da glucosa → en personas normales la glucosa sube → la somatostatina se activa → GH baja. En acromegalia, la GH <em>no baja</em> porque la secreta un tumor de forma autónoma.
+            </div>
+          </div>
+          <div style="background:var(--rose-l);border:1.5px solid var(--rose);border-radius:10px;padding:13px">
+            <div style="font-family:'Fraunces',serif;font-weight:700;font-size:14px;color:var(--rose);margin-bottom:8px">⬆ Prueba de ESTIMULACIÓN</div>
+            <div style="font-size:13px;color:var(--muted);line-height:1.7">
+              Se administra un <strong>estímulo activador</strong> y se mide si la hormona sube.<br>
+              → Si <strong>no sube</strong>: hay déficit (el eje no puede responder).<br><br>
+              <em>Ejemplo:</em> Prueba de estimulación con glucagón para GH. Si la GH no supera 10 ng/mL tras el estímulo → déficit confirmado → enanismo hipofisario en niños.
+            </div>
+          </div>
+        </div>
+        <div style="background:var(--surf);border-radius:8px;padding:9px 12px;font-size:12.5px;color:var(--muted)">📌 Conexión directa con el simulador: la prueba de supresión reproduce el escenario "feedback negativo activo" y la prueba de estimulación el escenario "estimulación". Si el eje no reacciona como en el simulador → hay patología.</div>
+      </div>
     </div>
+
     <div class="acc-item">
-      <div class="acc-hd" onclick="toggleAcc(this)">4 · Determinación de anticuerpos antihormona o antirreceptor <span class="acc-ic">+</span></div>
-      <div class="acc-bd">En algunas enfermedades autoinmunes, el sistema inmune produce <strong>anticuerpos</strong> contra la propia hormona o contra su receptor. Su detección confirma la causa autoinmune.<br><br>Ejemplo: anticuerpos anti-receptor de TSH (TRAb) en la enfermedad de Graves-Basedow (causa más frecuente de hipertiroidismo).</div>
+      <div class="acc-hd" onclick="toggleAcc(this)">
+        <span>4 · Determinación de anticuerpos antihormona o antirreceptor</span>
+        <span class="acc-ic">+</span>
+      </div>
+      <div class="acc-bd">
+        En algunas enfermedades autoinmunes, el sistema inmune produce anticuerpos contra la propia hormona o contra su receptor. Su detección confirma el origen autoinmune.<br><br>
+        <div style="background:var(--surf);border-radius:8px;padding:10px 13px;font-size:13px;color:var(--muted);margin-top:6px">
+          🔗 <strong>Recuerda el paso 4 del repaso</strong> (el receptor): vimos que los anticuerpos antirreceptor pueden <em>bloquear</em> el receptor (impidiendo que la hormona actúe) o <em>activarlo</em> de forma autónoma (como si fuera la hormona).<br><br>
+          <strong>Ejemplo:</strong> Anticuerpos anti-receptor de TSH (TRAb) en la enfermedad de Graves-Basedow. Los TRAb <em>activan</em> el receptor de TSH de forma continua → el tiroides produce T3/T4 sin control → hipertiroidismo. No hay exceso de TSH (está baja por el feedback), pero el tiroides actúa como si lo hubiera.
+        </div>
+      </div>
     </div>
+
     <div class="acc-item">
-      <div class="acc-hd" onclick="toggleAcc(this)">5 · Determinación de receptores en biopsias de tejidos <span class="acc-ic">+</span></div>
-      <div class="acc-bd">En algunos tumores, la presencia o ausencia de receptores hormonales determina el tratamiento. Se estudia directamente en la biopsia del tejido.<br><br>Ejemplo: receptores de estrógenos (RE) y progesterona (RP) en cáncer de mama. Su positividad indica que el tumor responde a terapia hormonal (tamoxifeno).</div>
+      <div class="acc-hd" onclick="toggleAcc(this)">
+        <span>5 · Determinación de receptores en biopsias de tejidos</span>
+        <span class="acc-ic">+</span>
+      </div>
+      <div class="acc-bd">
+        En tumores hormonodependientes, la presencia o ausencia de receptores hormonales en la biopsia determina el tratamiento.<br><br>
+        <div style="background:var(--surf);border-radius:8px;padding:10px 13px;font-size:13px;color:var(--muted);margin-top:6px">
+          🔗 <strong>Recuerda el paso 4 del repaso</strong>: sin receptor no hay efecto, aunque la hormona esté presente. En oncología esto se aplica directamente: si el tumor de mama tiene receptores de estrógenos (RE+), responde a la terapia antiestrogénica (tamoxifeno). Si no tiene receptor (RE−), no responderá aunque los estrógenos sean altos.
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1118,51 +1222,61 @@ tr:hover td{background:var(--cream)}
 <!-- ════ S7: LA HIPÓFISIS ════ -->
 <section id="s7" class="sec">
   <div class="cw">
-    <div class="eyebrow">⬡ 9.2 · Hormonas hipofisarias</div>
+    <div class="eyebrow">⬡ 9.2 · El nivel 2 del eje</div>
     <h2 class="sec-title">La hipófisis: la glándula maestra</h2>
-    <p class="sec-sub">Las hormonas hipofisarias son segregadas por la hipófisis, considerada la glándula más importante del sistema endocrino. Esta glándula está formada por tres lóbulos con funciones muy distintas.</p>
+    <p class="sec-sub">Ya sabemos que la hipófisis es el nivel 2 de todos los ejes endocrinos: recibe las órdenes del hipotálamo (nivel 1) y activa las glándulas diana (nivel 3). Ahora vamos a conocer en detalle qué produce cada parte de la hipófisis y por qué su análisis es tan relevante en el laboratorio.</p>
+
+    <!-- Conexión con el eje -->
+    <div style="background:var(--teal-l);border:2px solid var(--teal);border-radius:14px;padding:14px 20px;margin-bottom:20px;font-size:13.5px;color:var(--muted)">
+      🔗 <strong style="color:var(--teal)">Posición en el eje:</strong> La hipófisis está situada entre el hipotálamo (que la regula con hormonas liberadoras) y las glándulas diana (tiroides, suprarrenales, gónadas) que controla con sus hormonas tróficas. Un tumor hipofisario puede afectar simultáneamente a varios ejes, alterando TSH, ACTH, LH/FSH y GH a la vez.
+    </div>
 
     <div class="cmp">
       <div class="cmp-card">
-        <div class="cmp-head" style="background:var(--blue-l);color:var(--blue)">⬆ Adenohipófisis (lóbulo anterior)</div>
+        <div class="cmp-head" style="background:var(--blue-l);color:var(--blue)">⬆ Adenohipófisis · Lóbulo anterior</div>
         <div class="cmp-body">
-          <div class="cmp-row"><span class="cmp-lbl">GH</span><span class="cmp-val">Hormona del crecimiento / Somatotropina</span></div>
-          <div class="cmp-row"><span class="cmp-lbl">PRL</span><span class="cmp-val">Prolactina</span></div>
-          <div class="cmp-row"><span class="cmp-lbl">TSH</span><span class="cmp-val">Tirotropina</span></div>
-          <div class="cmp-row"><span class="cmp-lbl">ACTH</span><span class="cmp-val">Corticotropina</span></div>
-          <div class="cmp-row"><span class="cmp-lbl">LH</span><span class="cmp-val">Hormona luteinizante</span></div>
-          <div class="cmp-row"><span class="cmp-lbl">FSH</span><span class="cmp-val">Hormona foliculoestimulante</span></div>
-          <p style="font-size:12px;color:var(--muted2);margin:8px 0 0;border-top:1px solid var(--border);padding-top:8px">Porción más grande. Secreta bajo control de las hormonas liberadoras hipotalámicas.</p>
+          <div class="cmp-row"><span class="cmp-lbl">GH</span><span class="cmp-val">Somatotropina — crecimiento, metabolismo (eje GH)</span></div>
+          <div class="cmp-row"><span class="cmp-lbl">PRL</span><span class="cmp-val">Prolactina — producción de leche (sin eje hipofisario clásico)</span></div>
+          <div class="cmp-row"><span class="cmp-lbl">TSH</span><span class="cmp-val">Tirotropina — activa el tiroides (eje tiroideo, nivel 2)</span></div>
+          <div class="cmp-row"><span class="cmp-lbl">ACTH</span><span class="cmp-val">Corticotropina — activa la suprarrenal (eje suprarrenal, nivel 2)</span></div>
+          <div class="cmp-row"><span class="cmp-lbl">LH</span><span class="cmp-val">Luteinizante — activa gónadas, desencadena ovulación (eje gonadal, nivel 2)</span></div>
+          <div class="cmp-row"><span class="cmp-lbl">FSH</span><span class="cmp-val">Foliculoestimulante — activa gónadas, maduración folicular (eje gonadal, nivel 2)</span></div>
+          <p style="font-size:12px;color:var(--muted2);margin:8px 0 0;border-top:1px solid var(--border);padding-top:8px">Secreta bajo control de las hormonas liberadoras hipotalámicas (nivel 1). Es la pieza central de todos los ejes.</p>
         </div>
       </div>
       <div>
         <div class="cmp-card" style="margin-bottom:14px">
-          <div class="cmp-head" style="background:var(--violet-l);color:var(--violet)">⬇ Neurohipófisis (lóbulo posterior)</div>
+          <div class="cmp-head" style="background:var(--violet-l);color:var(--violet)">⬇ Neurohipófisis · Lóbulo posterior</div>
           <div class="cmp-body">
-            <div class="cmp-row"><span class="cmp-lbl">ADH</span><span class="cmp-val">Vasopresina — reabsorción de agua renal</span></div>
-            <div class="cmp-row"><span class="cmp-lbl">OXT</span><span class="cmp-val">Oxitocina — parto y lactancia</span></div>
-            <p style="font-size:12px;color:var(--muted2);margin:7px 0 0;border-top:1px solid var(--border);padding-top:7px">ADH y oxitocina se producen en el hipotálamo y sólo se almacenan y liberan desde la neurohipófisis.</p>
+            <div class="cmp-row"><span class="cmp-lbl">ADH</span><span class="cmp-val">Vasopresina — reabsorción de agua renal (eje independiente)</span></div>
+            <div class="cmp-row"><span class="cmp-lbl">OXT</span><span class="cmp-val">Oxitocina — contracciones uterinas, lactancia</span></div>
+            <p style="font-size:12px;color:var(--muted2);margin:7px 0 0;border-top:1px solid var(--border);padding-top:7px">⚠️ Estas hormonas se <em>producen en el hipotálamo</em> (nivel 1) y solo se almacenan y liberan desde la neurohipófisis. Una lesión del tallo hipofisario puede cortarles el paso y provocar déficit de ADH → diabetes insípida central.</p>
           </div>
         </div>
         <div class="cmp-card">
           <div class="cmp-head" style="background:var(--surf);color:var(--muted)">↔ Lóbulo medio</div>
           <div class="cmp-body">
-            <div class="cmp-row"><span class="cmp-lbl">MSH</span><span class="cmp-val">Melanotropina — síntesis de melanina en la piel</span></div>
+            <div class="cmp-row"><span class="cmp-lbl">MSH</span><span class="cmp-val">Melanotropina — síntesis de melanina en piel</span></div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="ib am"><div class="ib-t">⚙️ La regulación ya la conoces</div>El eje hipotálamo-hipófisis se regula exactamente como viste en el simulador: la hormona efectora del nivel 3 actúa en feedback negativo sobre hipotálamo e hipófisis. Cuando ese freno falla o cuando la hipófisis falla, el patrón analítico cambia de forma predecible y ya sabes interpretarlo.</div>
   </div>
 </section>
 
 <!-- ════ S8: TABLA 9.1 ════ -->
 <section id="s8" class="sec">
   <div class="cw">
-    <div class="eyebrow">⬡ Tabla 9.1 · Factores hipotalámicos</div>
+    <div class="eyebrow">⬡ Tabla 9.1 · El nivel 1 en detalle</div>
     <h2 class="sec-title">Factores liberadores e inhibidores del hipotálamo</h2>
-    <p class="sec-sub">La producción de las hormonas hipofisarias está regulada por las células neurosecretoras del hipotálamo. Estas producen dos tipos de polipéptidos. Haz clic en cada fila para ampliar la relevancia clínica.</p>
+    <p class="sec-sub">El hipotálamo (nivel 1) controla la hipófisis (nivel 2) mediante hormonas liberadoras e inhibidoras. Esta tabla detalla qué produce el hipotálamo para cada eje. Haz clic en cada fila para ver su relevancia clínica y cómo se relaciona con lo que ya has estudiado.</p>
 
-    <div class="ib tl"><div class="ib-t">Dos tipos de regulación</div><strong>Factores estimuladores</strong>: son las hormonas liberadoras (RH). &nbsp;|&nbsp; <strong>Factores inhibidores</strong>: son la somatostatina (inhibe GH) y la dopamina (inhibe PRL).</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px">
+      <div class="ib tl" style="margin:0"><div class="ib-t">⬆ Factores estimuladores (hormonas liberadoras · RH)</div>Activan la hipófisis para secretar la hormona trófica correspondiente. Son TRH, GnRH, CRH, GHRH. <strong>Sin ellas, el eje se apaga.</strong></div>
+      <div class="ib ro" style="margin:0"><div class="ib-t">⬇ Factores inhibidores</div>Frenan la hipófisis. Son la <strong>somatostatina</strong> (inhibe GH) y la <strong>dopamina</strong> (inhibe PRL). Si se bloquean, las hormonas que frenan suben sin control.</div>
+    </div>
 
     <div class="tw">
       <table id="tabla91">
@@ -1171,7 +1285,7 @@ tr:hover td{background:var(--cream)}
             <th>Factor / Hormona hipotalámica</th>
             <th>Abreviatura</th>
             <th>Tipo efecto</th>
-            <th>Hormona hipofisaria</th>
+            <th>Hormona hipofisaria afectada</th>
           </tr>
         </thead>
         <tbody>
@@ -1181,7 +1295,10 @@ tr:hover td{background:var(--cream)}
             <td>↑ Estimulación</td>
             <td>TSH, GH, PRL, FSH</td>
           </tr>
-          <tr class="t91-detail" id="d91-trh"><td colspan="4"><strong>TRH:</strong> Además de estimular la TSH (principal efecto), también actúa sobre GH y PRL. En el hipotiroidismo primario, los niveles elevados de TRH pueden provocar hiperprolactinemia y galactorrea, aunque la TSH sea el marcador de elección.</td></tr>
+          <tr class="t91-detail" id="d91-trh"><td colspan="4">
+            <strong>TRH → eje tiroideo (nivel 1→2):</strong> La TRH hipotalámica activa la síntesis y secreción de TSH en la hipófisis. La TSH a su vez activa el tiroides (nivel 3) para producir T3/T4, que frenan la TRH por feedback negativo.<br><br>
+            🔗 <strong>Conexión clínica:</strong> En el hipotiroidismo primario (fallo del tiroides, nivel 3), la T3/T4 baja → desaparece el freno → TRH sube → TSH sube mucho. Además, la TRH elevada también estimula la PRL, lo que puede provocar galactorrea en algunas pacientes con hipotiroidismo no tratado.
+          </td></tr>
 
           <tr class="t91-row" onclick="toggleT91(this,'d91-gnrh')">
             <td>H. liberadora luteinizante</td>
@@ -1189,7 +1306,10 @@ tr:hover td{background:var(--cream)}
             <td>↑ Estimulación</td>
             <td>LH, FSH</td>
           </tr>
-          <tr class="t91-detail" id="d91-gnrh"><td colspan="4"><strong>GnRH:</strong> Regula ambas gonadotropinas. Se libera de forma pulsátil. La administración pulsátil de GnRH exógena puede estimular la ovulación en tratamientos de fertilidad; la administración continua la inhibe (análogos de GnRH en cáncer de próstata o endometriosis).</td></tr>
+          <tr class="t91-detail" id="d91-gnrh"><td colspan="4">
+            <strong>GnRH → eje gonadal (nivel 1→2):</strong> La GnRH hipotalámica, liberada de forma pulsátil, activa la hipófisis para secretar LH y FSH, que a su vez estimulan las gónadas (nivel 3).<br><br>
+            🔗 <strong>Aplicación terapéutica del feedback:</strong> La GnRH pulsátil estimula la ovulación (útil en fertilidad). Pero si se administra de forma continua, satura los receptores de la hipófisis → LH y FSH caen → gónadas se apagan. Este efecto paradójico se usa clínicamente: análogos de GnRH continuos en cáncer de próstata o endometriosis para "apagar" el eje gonadal.
+          </td></tr>
 
           <tr class="t91-row" onclick="toggleT91(this,'d91-prf')">
             <td>Factor liberador de prolactina</td>
@@ -1197,7 +1317,10 @@ tr:hover td{background:var(--cream)}
             <td>↑ Estimulación</td>
             <td>PRL</td>
           </tr>
-          <tr class="t91-detail" id="d91-prf"><td colspan="4"><strong>PRF:</strong> El control de la PRL es predominantemente inhibitorio (dopamina). El PRF actúa sólo en ciertas situaciones, como el embarazo y la lactancia. Cualquier fármaco que bloquee la dopamina (metoclopramida, haloperidol) puede provocar hiperprolactinemia secundaria.</td></tr>
+          <tr class="t91-detail" id="d91-prf"><td colspan="4">
+            <strong>PRF → PRL:</strong> A diferencia de todos los demás ejes, la PRL está controlada principalmente por <em>inhibición</em> (dopamina). El PRF solo actúa en situaciones concretas (embarazo, lactancia).<br><br>
+            🔗 <strong>Consecuencia práctica:</strong> Cualquier fármaco que bloquee la dopamina (metoclopramida, haloperidol, antipsicóticos) interrumpe el freno tónico sobre la PRL → hiperprolactinemia → galactorrea. Es uno de los efectos secundarios más frecuentes de estos fármacos.
+          </td></tr>
 
           <tr class="t91-row" onclick="toggleT91(this,'d91-ghrf')">
             <td>Factor liberador de h. del crecimiento</td>
@@ -1205,7 +1328,10 @@ tr:hover td{background:var(--cream)}
             <td>↑ Estimulación</td>
             <td>GH</td>
           </tr>
-          <tr class="t91-detail" id="d91-ghrf"><td colspan="4"><strong>GH-RF:</strong> Estimula la secreción de GH. Un déficit de GH-RF hipotalámico puede provocar enanismo hipofisario. La GHRH sintética se usa en pruebas dinámicas de estimulación de GH.</td></tr>
+          <tr class="t91-detail" id="d91-ghrf"><td colspan="4">
+            <strong>GHRH → eje GH (nivel 1→2):</strong> La GHRH estimula la GH. Pero la GH está regulada también por el factor inhibidor somatostatina. El equilibrio entre GHRH (estimulador) y somatostatina (inhibidor) determina cuánta GH se secreta.<br><br>
+            🔗 <strong>Prueba dinámica:</strong> En las pruebas de estimulación de GH (glucagón, insulina), lo que se hace es suprimir la somatostatina para ver si el eje puede liberar GH. Si no lo hace → déficit en la hipófisis o el hipotálamo.
+          </td></tr>
 
           <tr class="t91-row" onclick="toggleT91(this,'d91-crh')">
             <td>H. liberadora de corticotropina</td>
@@ -1213,7 +1339,10 @@ tr:hover td{background:var(--cream)}
             <td>↑ Estimulación</td>
             <td>ACTH</td>
           </tr>
-          <tr class="t91-detail" id="d91-crh"><td colspan="4"><strong>CRH:</strong> Modula el eje hipotálamo-hipófisis-suprarrenal. Se libera en respuesta al estrés. En la enfermedad de Cushing hipotalámica (exceso de CRH), los niveles de ACTH y cortisol son elevados.</td></tr>
+          <tr class="t91-detail" id="d91-crh"><td colspan="4">
+            <strong>CRH → eje suprarrenal (nivel 1→2):</strong> La CRH activa la ACTH hipofisaria, que activa la corteza suprarrenal para producir cortisol (nivel 3). El cortisol frena CRH y ACTH por feedback negativo.<br><br>
+            🔗 <strong>Test de supresión con dexametasona:</strong> La dexametasona es un glucocorticoide sintético que actúa como el cortisol sobre el receptor del feedback negativo → frena CRH y ACTH → el cortisol endógeno baja. Si no baja → el eje no responde al freno → hipercortisolismo autónomo (síndrome de Cushing).
+          </td></tr>
 
           <tr class="t91-row" onclick="toggleT91(this,'d91-ghif')">
             <td>Somatostatina (f. inhibidor de GH)</td>
@@ -1221,7 +1350,10 @@ tr:hover td{background:var(--cream)}
             <td>↓ Inhibición</td>
             <td>GH</td>
           </tr>
-          <tr class="t91-detail" id="d91-ghif"><td colspan="4"><strong>Somatostatina:</strong> Inhibe la GH. También actúa como señal paracrina inhibiendo la insulina y el glucagón en el páncreas. Los análogos de somatostatina (octreótido) se usan en el tratamiento de la acromegalia.</td></tr>
+          <tr class="t91-detail" id="d91-ghif"><td colspan="4">
+            <strong>Somatostatina → inhibe GH (y también insulina/glucagón):</strong> Es el freno principal de la GH a nivel hipotalámico. También actúa localmente en el páncreas como señal paracrina inhibiendo la secreción de insulina y glucagón.<br><br>
+            🔗 <strong>Aplicación terapéutica:</strong> Los análogos de somatostatina (octreótido, lanreótido) se usan para tratar la acromegalia: al potenciar el freno hipotalámico, reducen la secreción de GH por el tumor hipofisario.
+          </td></tr>
 
           <tr class="t91-row" onclick="toggleT91(this,'d91-da')">
             <td>Dopamina</td>
@@ -1229,20 +1361,23 @@ tr:hover td{background:var(--cream)}
             <td>↓ Inhibición</td>
             <td>PRL</td>
           </tr>
-          <tr class="t91-detail" id="d91-da"><td colspan="4"><strong>Dopamina:</strong> Es el principal inhibidor de la PRL. Actúa de forma tónica: si se interrumpe el flujo de dopamina al hipotálamo (lesión del tallo hipofisario, fármacos antidopaminérgicos), la PRL aumenta. Los agonistas de dopamina (cabergolina, bromocriptina) son el tratamiento de elección del prolactinoma.</td></tr>
+          <tr class="t91-detail" id="d91-da"><td colspan="4">
+            <strong>Dopamina → freno tónico de PRL:</strong> A diferencia del cortisol o la T4 que frenan el eje por feedback negativo, la dopamina frena la PRL de forma continua e independiente del nivel de prolactina. Es un freno "estructural", no de feedback.<br><br>
+            🔗 <strong>Tratamiento del prolactinoma:</strong> Los agonistas dopaminérgicos (cabergolina, bromocriptina) imitan la dopamina → frenan la PRL incluso cuando la produce un tumor hipofisario. Es el tratamiento de elección del prolactinoma, por encima de la cirugía.
+          </td></tr>
         </tbody>
       </table>
     </div>
-    <p style="font-size:12px;color:var(--muted2);margin-top:6px"><em>Tabla 9.1 (pág. 209) — Haz clic en cada fila para ampliar la relevancia clínica.</em></p>
+    <p style="font-size:12px;color:var(--muted2);margin-top:6px"><em>Tabla 9.1 (pág. 209) — Haz clic en cada fila para ampliar la relevancia clínica y la conexión con el eje.</em></p>
   </div>
 </section>
 
 <!-- ════ S9: GH Y PRL ════ -->
 <section id="s9" class="sec">
   <div class="cw">
-    <div class="eyebrow">⬡ 9.2.1 y 9.2.2</div>
+    <div class="eyebrow">⬡ 9.2.1 y 9.2.2 · Nivel 2 del eje GH y de la lactancia</div>
     <h2 class="sec-title">GH y Prolactina</h2>
-    <p class="sec-sub">Dos hormonas con características preanalíticas importantes: secreción pulsátil (GH) y variación circadiana (PRL). En ambas, <strong>el momento de la extracción y el método de estudio son determinantes</strong>.</p>
+    <p class="sec-sub">Dos hormonas hipofisarias con una característica común clave para el laboratorio: <strong>no pueden medirse de forma puntual</strong>. La GH porque se secreta en pulsos, la PRL porque varía con el ciclo circadiano. Entender por qué es entender el eje en acción.</p>
 
     <div class="hor-nav" id="ghprl-nav">
       <button class="hor-btn active" onclick="showHor('ghprl',0,this)">🦴 GH — Somatotropina</button>
@@ -1251,30 +1386,40 @@ tr:hover td{background:var(--cream)}
 
     <!-- GH -->
     <div class="hor-panel active" id="ghprl-p0">
-      <p>La <strong>hormona del crecimiento (GH)</strong> o <strong>somatotropina</strong> es una proteína que tiene un efecto de activación del metabolismo celular, principalmente sobre los <strong>huesos, los cartílagos y los tejidos blandos</strong>.</p>
-      <p>La GH también estimula la producción del <strong>factor de crecimiento insulínico tipo 1 (IGF-1)</strong>, que se produce principalmente en el hígado, pero también en células de otros órganos con receptores para GH.</p>
 
-      <div class="ib am"><div class="ib-t">⏱ Secreción pulsátil: por qué una determinación aislada no sirve</div>La liberación de GH se produce en <strong>picos pulsátiles</strong> durante las primeras horas del sueño y en situaciones de estrés y ejercicio. En individuos normales, los niveles plasmáticos de GH durante la mayor parte del día son <strong>muy bajos</strong>. La liberación pulsátil hace que su medida única y aislada <strong>no sea clínicamente útil</strong>. Por eso se han desarrollado dos tipos de análisis: <em>pruebas de supresión</em> y <em>pruebas de estimulación</em>.</div>
+      <!-- Conexión con eje -->
+      <div style="background:var(--teal-l);border-left:4px solid var(--teal);border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:13px;color:var(--muted)">
+        🔗 <strong style="color:var(--teal)">Posición en el eje GH:</strong> Hipotálamo (GHRH/somatostatina) → <strong>Hipófisis (GH)</strong> → Hígado/tejidos (IGF-1) → feedback (−). La GH es la hormona trófica del eje (nivel 2). Pero a diferencia de TSH o ACTH, no actúa sobre una sola glándula sino sobre muchos tejidos a la vez.
+      </div>
 
-      <div class="ib tl"><div class="ib-t">🔬 IGF-1 como parámetro de elección</div>La determinación de las concentraciones de IGF-1 se utiliza como parámetro bioquímico, pues son un <strong>reflejo de las de GH</strong>. Se suelen hacer determinaciones seriadas de IGF-1 porque el rango de normalidad es muy amplio, además de variable según el estado de desarrollo y el sexo.</div>
+      <p>La <strong>hormona del crecimiento (GH)</strong> o <strong>somatotropina</strong> activa el metabolismo celular principalmente sobre <strong>huesos, cartílagos y tejidos blandos</strong>. También estimula la producción de <strong>IGF-1</strong> (factor de crecimiento insulínico tipo 1) en el hígado, que es el verdadero mediador del crecimiento óseo.</p>
 
-      <h4>Alteraciones y pruebas diagnósticas</h4>
+      <div class="ib am"><div class="ib-t">⏱ Secreción pulsátil: por qué el simulador muestra picos nocturnos</div>
+        La GH se libera en <strong>picos pulsátiles</strong> durante las primeras horas del sueño y en situaciones de ejercicio intenso o hipoglucemia. El resto del día los niveles basales son muy bajos, incluso en personas con exceso de GH.<br><br>
+        Consecuencia directa: <strong>una medida aislada no es clínicamente útil</strong>. Por eso existen las pruebas dinámicas que vimos en las estrategias diagnósticas: supresión (para detectar exceso) y estimulación (para detectar déficit).
+      </div>
+
+      <div class="ib tl"><div class="ib-t">🔬 IGF-1: la solución al problema de la pulsatilidad</div>
+        La determinación de <strong>IGF-1</strong> (somatomedina C) refleja la secreción integrada de GH a lo largo del tiempo, sin las fluctuaciones pulsátiles. Es estable durante el día, no requiere prueba dinámica para el cribado, y varía según la edad y el sexo. Es el parámetro de elección para el diagnóstico y el seguimiento del tratamiento con GH recombinante.
+      </div>
+
+      <h4>Alteraciones y pruebas diagnósticas — aplicando las estrategias del 9.1</h4>
       <div class="cmp">
         <div class="cmp-card">
-          <div class="cmp-head hi">📈 Hipersecreción de GH</div>
+          <div class="cmp-head hi">📈 Hipersecreción de GH · Nivel 2 hiperactivo</div>
           <div class="cmp-body">
-            <div class="cmp-row"><span class="cmp-lbl">Causa</span><span class="cmp-val">Tumor hipofisario secretor</span></div>
-            <div class="cmp-row"><span class="cmp-lbl">En niños</span><span class="cmp-val"><strong>Gigantismo</strong> (antes del cierre epifisario)</span></div>
-            <div class="cmp-row"><span class="cmp-lbl">En adultos</span><span class="cmp-val"><strong>Acromegalia</strong> + hiperproducción de IGF-1</span></div>
-            <div class="cmp-row"><span class="cmp-lbl">Prueba</span><span class="cmp-val"><strong>Supresión con glucosa</strong>: el paciente ingiere glucosa → en hipersecreción la GH <em>no se inhibe</em></span></div>
+            <div class="cmp-row"><span class="cmp-lbl">Causa</span><span class="cmp-val">Tumor hipofisario secretor (nivel 2 autónomo)</span></div>
+            <div class="cmp-row"><span class="cmp-lbl">En niños</span><span class="cmp-val"><strong>Gigantismo</strong> (antes del cierre de las epífisis óseas)</span></div>
+            <div class="cmp-row"><span class="cmp-lbl">En adultos</span><span class="cmp-val"><strong>Acromegalia</strong>: manos, pies, mandíbula, nariz agrandan. IGF-1 ↑↑</span></div>
+            <div class="cmp-row"><span class="cmp-lbl">Estrategia</span><span class="cmp-val"><strong>Prueba de supresión con glucosa</strong>: en personas normales la glucosa suprime la GH. En acromegalia la GH <em>no baja</em> porque el tumor es autónomo (no responde al feedback)</span></div>
           </div>
         </div>
         <div class="cmp-card">
-          <div class="cmp-head lo">📉 Hiposecreción de GH</div>
+          <div class="cmp-head lo">📉 Hiposecreción de GH · Nivel 2 insuficiente</div>
           <div class="cmp-body">
-            <div class="cmp-row"><span class="cmp-lbl">Causa</span><span class="cmp-val">Déficit de GH-RF hipotalámico o lesión hipofisaria</span></div>
-            <div class="cmp-row"><span class="cmp-lbl">En niños</span><span class="cmp-val"><strong>Enanismo hipofisario</strong></span></div>
-            <div class="cmp-row"><span class="cmp-lbl">Prueba</span><span class="cmp-val"><strong>Estimulación</strong>: protocolo farmacológico → en déficit la GH <em>no aumenta</em></span></div>
+            <div class="cmp-row"><span class="cmp-lbl">Causa</span><span class="cmp-val">Déficit de GHRH hipotalámico o lesión hipofisaria</span></div>
+            <div class="cmp-row"><span class="cmp-lbl">En niños</span><span class="cmp-val"><strong>Enanismo hipofisario</strong>: talla muy baja con proporciones normales</span></div>
+            <div class="cmp-row"><span class="cmp-lbl">Estrategia</span><span class="cmp-val"><strong>Prueba de estimulación</strong> (glucagón, insulina): si la GH no supera 10 ng/mL → déficit confirmado. El eje no responde al estímulo</span></div>
             <div class="cmp-row"><span class="cmp-lbl">Seguimiento</span><span class="cmp-val">IGF-1 para monitorizar el tratamiento con GH recombinante</span></div>
           </div>
         </div>
@@ -1283,19 +1428,26 @@ tr:hover td{background:var(--cream)}
 
     <!-- PRL -->
     <div class="hor-panel" id="ghprl-p1">
-      <p>La <strong>prolactina (PRL)</strong> es una proteína cuyo principal efecto es <strong>estimular la producción de leche materna</strong> por las glándulas mamarias. Durante el embarazo, la prolactina, los estrógenos y la progesterona estimulan la formación de leche. Tras el parto, la prolactina ayuda a iniciar y mantener el suministro de leche. Existe un mecanismo de <strong>retroalimentación positiva</strong> entre la frecuencia con la que se amamanta al bebé y la cantidad de prolactina secretada.</p>
 
-      <div class="ib bl"><div class="ib-t">⏰ Variación circadiana: cuándo extraer</div>Las concentraciones varían a lo largo de las 24 horas, aumentando durante las horas de sueño con un <strong>pico por la mañana</strong>. Idealmente, la extracción debería realizarse aproximadamente <strong>dos horas después de despertarse</strong>.</div>
+      <div style="background:var(--teal-l);border-left:4px solid var(--teal);border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:13px;color:var(--muted)">
+        🔗 <strong style="color:var(--teal)">Posición especial:</strong> La PRL no sigue el esquema clásico de tres niveles con glándula diana. La hipófisis la produce y actúa directamente sobre las glándulas mamarias sin glándula diana intermediaria. Su regulación es principalmente <em>inhibitoria</em>: la dopamina hipotalámica la frena de forma tónica (recuerda la Tabla 9.1).
+      </div>
 
-      <h4>Hiperprolactinemia</h4>
-      <p>La causa principal son los <strong>prolactinomas</strong>, que son los tumores más frecuentes de la hipófisis. También puede estar asociada al hipotiroidismo, al ovario poliquístico, a la insuficiencia renal y al uso de medicamentos.</p>
+      <p>La <strong>prolactina (PRL)</strong> estimula la producción de leche materna. Durante el embarazo, junto a estrógenos y progesterona, prepara las mamas. Tras el parto, la lactancia genera un <strong>feedback positivo</strong>: cuanto más se amamanta, más PRL se secreta.</p>
+
+      <div class="ib bl"><div class="ib-t">⏰ Variación circadiana: cuándo extraer</div>
+        La PRL aumenta durante el sueño con un pico matutino. <strong>Extraer aproximadamente 2 horas después de despertar</strong>. Una extracción demasiado temprana sobrestimará los valores.
+      </div>
+
+      <h4>Hiperprolactinemia — ¿dónde está el fallo?</h4>
+      <p>La causa principal son los <strong>prolactinomas</strong>, tumores hipofisarios que producen PRL de forma autónoma (sin necesitar estímulo). También puede elevarse por hipotiroidismo (TRH ↑ estimula PRL), ovario poliquístico, insuficiencia renal o fármacos antidopaminérgicos.</p>
 
       <div class="cmp">
         <div class="cmp-card">
           <div class="cmp-head hi">👩 Síntomas en la mujer</div>
           <div class="cmp-body">
-            <div class="cmp-row"><span class="cmp-lbl"></span><span class="cmp-val">Producción de leche no asociada a embarazo ni lactancia (<strong>galactorrea</strong>)</span></div>
-            <div class="cmp-row"><span class="cmp-lbl"></span><span class="cmp-val">Amenorrea</span></div>
+            <div class="cmp-row"><span class="cmp-lbl"></span><span class="cmp-val">Galactorrea (leche sin embarazo ni lactancia)</span></div>
+            <div class="cmp-row"><span class="cmp-lbl"></span><span class="cmp-val">Amenorrea (PRL ↑ inhibe la GnRH → cae el eje gonadal)</span></div>
             <div class="cmp-row"><span class="cmp-lbl"></span><span class="cmp-val">Esterilidad</span></div>
           </div>
         </div>
@@ -1304,12 +1456,16 @@ tr:hover td{background:var(--cream)}
           <div class="cmp-body">
             <div class="cmp-row"><span class="cmp-lbl"></span><span class="cmp-val">Disfunción eréctil</span></div>
             <div class="cmp-row"><span class="cmp-lbl"></span><span class="cmp-val">Infertilidad</span></div>
-            <div class="cmp-row"><span class="cmp-lbl"></span><span class="cmp-val">Galactorrea</span></div>
+            <div class="cmp-row"><span class="cmp-lbl"></span><span class="cmp-val">Galactorrea (menos frecuente)</span></div>
           </div>
         </div>
       </div>
 
-      <div class="ib am"><div class="ib-t">💊 Conexión farmacológica (desde Tabla 9.1)</div>La dopamina inhibe la PRL de forma tónica. Fármacos que <strong>bloquean la dopamina</strong> (metoclopramida, haloperidol, antipsicóticos) → ↑PRL → galactorrea. Fármacos que <strong>imitan la dopamina</strong> (cabergolina, bromocriptina) → ↓PRL → tratamiento del prolactinoma.</div>
+      <div class="ib am"><div class="ib-t">💊 La conexión dopamina-PRL y su aplicación terapéutica</div>
+        De la Tabla 9.1 recuerdas que la dopamina frena la PRL de forma tónica. Por eso:<br><br>
+        • Fármacos <strong>antidopaminérgicos</strong> (metoclopramida, haloperidol) → bloquean el freno → PRL ↑ → galactorrea<br>
+        • Fármacos <strong>agonistas dopaminérgicos</strong> (cabergolina, bromocriptina) → potencian el freno → PRL ↓ → tratamiento de elección del prolactinoma
+      </div>
     </div>
   </div>
 </section>
@@ -1317,8 +1473,9 @@ tr:hover td{background:var(--cream)}
 <!-- ════ S10: TSH Y ACTH ════ -->
 <section id="s10" class="sec">
   <div class="cw">
-    <div class="eyebrow">⬡ 9.2.3 y 9.2.4</div>
-    <h2 class="sec-title">Tirotropina (TSH) y Corticotropina (ACTH)</h2>
+    <div class="eyebrow">⬡ 9.2.3 y 9.2.4 · Las tróficas de los ejes tiroideo y suprarrenal</div>
+    <h2 class="sec-title">TSH y ACTH: localizando el fallo en el eje</h2>
+    <p class="sec-sub">TSH y ACTH son las hormonas tróficas del nivel 2 de sus respectivos ejes. Su determinación junto con la hormona efectora (T4 o cortisol) es la herramienta que usamos para localizar el nivel del fallo, exactamente como vimos en el simulador.</p>
 
     <div class="hor-nav" id="tshacth-nav">
       <button class="hor-btn active" onclick="showHor('tshacth',0,this)">🦋 TSH — Tirotropina</button>
@@ -1327,45 +1484,78 @@ tr:hover td{background:var(--cream)}
 
     <!-- TSH -->
     <div class="hor-panel active" id="tshacth-p0">
-      <p>La <strong>tirotropina (TSH)</strong> es una glucoproteína con una parte de su estructura semejante a la LH, la FSH y la hCG, ya que todas están constituidas por dos cadenas polipeptídicas (α y β), siendo la cadena α idéntica para todas y la cadena β la que les confiere su distinta especificidad.</p>
-      <p>Se encuentra regulada por el hipotálamo por la acción positiva de la <strong>TRH</strong> y por la retroalimentación de las hormonas tiroideas (T4 y T3). La determinación de TSH junto con la FT4 son las <strong>pruebas básicas</strong> para detectar alteraciones tiroideas.</p>
 
-      <h4>Interpretación del eje tiroideo</h4>
+      <div style="background:var(--blue-l);border-left:4px solid var(--blue);border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:13px;color:var(--muted)">
+        🔗 <strong style="color:var(--blue)">Posición en el eje tiroideo:</strong> Hipotálamo (TRH, nivel 1) → <strong>Hipófisis (TSH, nivel 2)</strong> → Tiroides (T3/T4, nivel 3) → feedback (−). La TSH es la trófica: su valor refleja si el freno del feedback está llegando correctamente a la hipófisis.
+      </div>
+
+      <p>La <strong>TSH</strong> es una glucoproteína con cadenas α y β (la cadena α es idéntica a la de LH, FSH y hCG; la β le da la especificidad). Se regula por la TRH hipotalámica y por el feedback negativo de T3/T4.</p>
+
+      <div class="ib tl"><div class="ib-t">🔑 La TSH como termómetro del eje tiroideo</div>
+        La TSH es el indicador más <strong>sensible</strong> de la función tiroidea. Un pequeño cambio en T3/T4 provoca un cambio mucho mayor en TSH (relación logarítmica). Por eso la TSH detecta alteraciones tiroideas antes de que T4 se salga del rango normal. Es la primera prueba del cribado tiroideo.
+      </div>
+
+      <h4>Interpretando TSH + FT4 con la lógica del eje</h4>
       <div class="tw"><table>
-        <tr><th>TSH</th><th>FT4</th><th>Diagnóstico</th><th>Nivel del fallo</th></tr>
-        <tr><td class="vu">↑ Alta</td><td class="vd">↓ Baja</td><td><strong>Hipotiroidismo primario</strong></td><td>Nivel 3 (tiroides)</td></tr>
-        <tr><td class="vd">↓ Baja</td><td class="vu">↑ Alta</td><td><strong>Hipertiroidismo primario</strong></td><td>Nivel 3 (tiroides)</td></tr>
-        <tr><td class="vd">↓ Baja</td><td class="vd">↓ Baja</td><td><strong>Hipotiroidismo secundario</strong></td><td>Nivel 2 (hipófisis) o 1 (hipotálamo)</td></tr>
-        <tr><td style="color:var(--muted)">Normal</td><td style="color:var(--muted)">Normal</td><td>Eutiroidismo</td><td>—</td></tr>
+        <tr><th>TSH (nivel 2)</th><th>FT4 (nivel 3)</th><th>Diagnóstico</th><th>Nivel del fallo · ¿Por qué?</th></tr>
+        <tr>
+          <td class="vu">↑ Alta</td><td class="vd">↓ Baja</td>
+          <td><strong>Hipotiroidismo primario</strong></td>
+          <td>Nivel 3 (tiroides). T4 baja → sin feedback → hipófisis compensa con más TSH. El tiroides no responde.</td>
+        </tr>
+        <tr>
+          <td class="vd">↓ Baja</td><td class="vu">↑ Alta</td>
+          <td><strong>Hipertiroidismo primario</strong></td>
+          <td>Nivel 3 (tiroides). T4 alta → feedback excesivo → hipófisis se frena → TSH cae. El tiroides produce demasiado.</td>
+        </tr>
+        <tr>
+          <td class="vd">↓ Baja</td><td class="vd">↓ Baja</td>
+          <td><strong>Hipotiroidismo secundario</strong></td>
+          <td>Nivel 2 (hipófisis) o nivel 1 (hipotálamo). La hipófisis no envía TSH → el tiroides no recibe estímulo → T4 baja.</td>
+        </tr>
+        <tr>
+          <td style="color:var(--muted)">Normal</td><td style="color:var(--muted)">Normal</td>
+          <td>Eutiroidismo</td><td>Eje equilibrado.</td>
+        </tr>
       </table></div>
-      <div class="ib ro"><div class="ib-t">🔑 Regla práctica</div>La TSH es el indicador más <strong>sensible</strong> de la función tiroidea. Ante cualquier sospecha de patología tiroidea, TSH es la primera determinación. Si está alterada, se amplía con FT4 (y a veces FT3) para confirmar y localizar el fallo.</div>
     </div>
 
     <!-- ACTH -->
     <div class="hor-panel" id="tshacth-p1">
-      <p>La <strong>corticotropina u hormona adrenocorticotropa (ACTH)</strong> es un polipéptido que actúa sobre la corteza suprarrenal para activar la producción de hormonas esteroides (cortisol y aldosterona). La secreción de la ACTH está modulada por la hormona liberadora de corticotropina (<strong>CRH</strong>) desde el hipotálamo.</p>
-      <p>La liberación de ACTH no es constante: sigue un <strong>ritmo circadiano</strong>, con el nivel más bajo alrededor de la medianoche y el más elevado hacia las <strong>8 de la mañana</strong>.</p>
 
-      <div class="ib ro"><div class="ib-t">🧊 Manipulación preanalítica crítica</div>La ACTH <strong>se degrada rápidamente</strong> por la acción de enzimas proteolíticas. La muestra debe:<br>• Conservarse inicialmente en un <strong>baño de hielo</strong><br>• Centrifugarse a <strong>4 °C</strong><br>• Analizarse de inmediato o congelarse a <strong>−20 °C</strong><br><br>Un manejo incorrecto dará valores <strong>falsamente bajos</strong>.</div>
-
-      <h4>Alteraciones</h4>
-      <p>Existe un mecanismo de retroalimentación negativa entre la ACTH y el cortisol: ambas hormonas se regulan mutuamente dentro de márgenes muy estrechos.</p>
-      <div class="cmp">
-        <div class="cmp-card">
-          <div class="cmp-head hi">Exceso de ACTH</div>
-          <div class="cmp-body">
-            <div class="cmp-row"><span class="cmp-lbl">Efecto</span><span class="cmp-val">Estimulación excesiva de la corteza suprarrenal → hipercortisolismo</span></div>
-            <div class="cmp-row"><span class="cmp-lbl">Patología</span><span class="cmp-val">Síndrome de Cushing ACTH-dependiente</span></div>
-          </div>
-        </div>
-        <div class="cmp-card">
-          <div class="cmp-head lo">Déficit de ACTH</div>
-          <div class="cmp-body">
-            <div class="cmp-row"><span class="cmp-lbl">Efecto</span><span class="cmp-val">La gl. suprarrenal no recibe estímulo → cortisol ↓</span></div>
-            <div class="cmp-row"><span class="cmp-lbl">Causa</span><span class="cmp-val">Lesión hipofisaria que impide la producción de ACTH</span></div>
-          </div>
-        </div>
+      <div style="background:var(--amber-l);border-left:4px solid var(--amber);border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:13px;color:var(--muted)">
+        🔗 <strong style="color:var(--amber)">Posición en el eje suprarrenal:</strong> Hipotálamo (CRH, nivel 1) → <strong>Hipófisis (ACTH, nivel 2)</strong> → Corteza suprarrenal (cortisol, nivel 3) → feedback (−). El mismo esquema que el tiroideo, pero con una particularidad importante: la muestra de ACTH es extremadamente lábil.
       </div>
+
+      <p>La <strong>ACTH</strong> activa la corteza suprarrenal para producir cortisol y aldosterona. Sigue un <strong>ritmo circadiano</strong>: pico a las 8h de la mañana, mínimo a medianoche. La extracción debe hacerse a la hora correcta.</p>
+
+      <div class="ib ro"><div class="ib-t">🧊 Preanalítica crítica: la ACTH se degrada muy rápido</div>
+        La ACTH se destruye por enzimas proteolíticas en la sangre a temperatura ambiente. Protocolo obligatorio:<br>
+        • Baño de hielo desde la extracción<br>
+        • Centrifugar a <strong>4 °C</strong><br>
+        • Analizar inmediatamente o congelar a <strong>−20 °C</strong><br><br>
+        Sin estas condiciones el resultado será falsamente bajo y puede llevar a un diagnóstico erróneo de hipocortisolismo secundario.
+      </div>
+
+      <h4>Interpretando ACTH + cortisol — mismo esquema que TSH + T4</h4>
+      <div class="tw"><table>
+        <tr><th>ACTH (nivel 2)</th><th>Cortisol (nivel 3)</th><th>Diagnóstico</th><th>Nivel del fallo</th></tr>
+        <tr>
+          <td class="vu">↑↑ Alta</td><td class="vd">↓ Bajo</td>
+          <td><strong>Insuf. suprarrenal primaria (Addison)</strong></td>
+          <td>Nivel 3 (suprarrenal). Cortisol bajo → sin feedback → ACTH se dispara.</td>
+        </tr>
+        <tr>
+          <td class="vd">↓ Baja</td><td class="vd">↓ Bajo</td>
+          <td><strong>Insuf. suprarrenal secundaria</strong></td>
+          <td>Nivel 2 (hipófisis). ACTH baja → suprarrenal sin estímulo → cortisol bajo.</td>
+        </tr>
+        <tr>
+          <td class="vu">↑ Alta</td><td class="vu">↑ Alto</td>
+          <td><strong>Síndrome de Cushing ACTH-dependiente</strong></td>
+          <td>Exceso de ACTH → suprarrenal sobreestimulada → cortisol alto. El feedback no funciona.</td>
+        </tr>
+      </table></div>
     </div>
   </div>
 </section>
@@ -1373,78 +1563,91 @@ tr:hover td{background:var(--cream)}
 <!-- ════ S11: GONADOTROPINAS ════ -->
 <section id="s11" class="sec">
   <div class="cw">
-    <div class="eyebrow">⬡ 9.2.5 · Gonadotropinas</div>
-    <h2 class="sec-title">LH y FSH: gonadotropinas</h2>
-    <p class="sec-sub">Las gonadotropinas son la <strong>hormona luteinizante (LH)</strong> y la <strong>hormona foliculoestimulante (FSH)</strong>. Ambas son glucoproteínas producidas por la adenohipófisis bajo estimulación de la GnRH hipotalámica. Provocan la producción de las hormonas sexuales en las gónadas.</p>
+    <div class="eyebrow">⬡ 9.2.5 · Las tróficas del eje gonadal</div>
+    <h2 class="sec-title">LH y FSH: el eje gonadal y el ciclo</h2>
+    <p class="sec-sub">LH y FSH son las hormonas tróficas del nivel 2 del eje gonadal. Su comportamiento es el más complejo de todos los ejes porque varía según el sexo, la edad y, en la mujer, la fase del ciclo menstrual. Para interpretarlas correctamente hay que saber en qué momento del eje estamos.</p>
 
-    <div class="ib am"><div class="ib-t">⚠️ Imprescindible para interpretar LH y FSH</div>Para valorar los resultados de FSH y LH de una persona es necesario conocer su <strong>edad, su sexo y la fase del ciclo menstrual</strong>. Su secreción tiene diferentes ciclos pulsátiles en el hombre y en la mujer.</div>
+    <div style="background:var(--violet-l);border-left:4px solid var(--violet);border-radius:10px;padding:12px 16px;margin-bottom:18px;font-size:13px;color:var(--muted)">
+      🔗 <strong style="color:var(--violet)">El mismo esquema del eje, pero con variación cíclica:</strong> Hipotálamo (GnRH, nivel 1) → <strong>Hipófisis (LH/FSH, nivel 2)</strong> → Gónadas (estrógenos/testosterona, nivel 3) → feedback (−). La diferencia respecto al eje tiroideo o suprarrenal es que en la mujer las hormonas del nivel 3 varían de forma rítmica a lo largo del mes, lo que hace que LH y FSH también varíen. <strong>Para valorar LH y FSH siempre hay que conocer el sexo, la edad y la fase del ciclo.</strong>
+    </div>
 
     <div class="tabs">
       <div class="tl2">
         <button class="tbtn active" onclick="switchTab('gon',0,this)">En la mujer: ciclo menstrual</button>
         <button class="tbtn" onclick="switchTab('gon',1,this)">En el varón</button>
-        <button class="tbtn" onclick="switchTab('gon',2,this)">Alteraciones</button>
+        <button class="tbtn" onclick="switchTab('gon',2,this)">Alteraciones: localizando el nivel</button>
       </div>
 
       <div id="gon-tab-0" class="tp active">
-        <p>En la mujer, los niveles de FSH y LH dependen del ciclo menstrual, dividido en dos fases:</p>
+        <p>En la mujer, el eje gonadal tiene un funcionamiento cíclico de 28 días que coordina la maduración del óvulo, la ovulación y la preparación del endometrio para la implantación.</p>
         <div class="cmp">
           <div>
-            <div class="ib tl"><div class="ib-t">Fase folicular (días 1–14)</div>FSH elevada → crecimiento y maduración del folículo ovárico y producción de <strong>estradiol</strong>. Al final de esta fase, FSH promueve el inicio de la producción de estradiol y las dos hormonas colaboran en el posterior desarrollo del óvulo. Hacia el final se produce un <strong>pico de FSH y LH</strong> → la liberación del óvulo (ovulación) ocurre justo después.</div>
-            <div class="ib vi"><div class="ib-t">Fase lútea (días 14–28)</div>El folículo se transforma en <strong>cuerpo lúteo</strong> cuya producción de progesterona es estimulada por la LH. Al aumentar estradiol y progesterona, disminuyen LH y FSH. Si no hay fecundación → disminuyen estradiol y progesterona → menstruación → el ciclo se reinicia.</div>
+            <div class="ib tl"><div class="ib-t">Fase folicular (días 1–14)</div>
+              Estrógenos bajos al inicio → feedback negativo reducido → FSH sube → madura el folículo → folículo produce más estradiol → pico de estradiol → <strong>pico de LH</strong> (feedback positivo transitorio) → ovulación (~día 14).
+            </div>
+            <div class="ib vi"><div class="ib-t">Fase lútea (días 14–28)</div>
+              El folículo se transforma en cuerpo lúteo → produce progesterona y estradiol → feedback negativo fuerte → LH y FSH bajan. Si no hay fecundación → cuerpo lúteo regresa → caen estrógenos y progesterona → menstruación → nuevo ciclo.
+            </div>
           </div>
           <div>
-            <div style="background:var(--white);border:1.5px solid var(--border);border-radius:14px;overflow:hidden;margin-top:0">
+            <div style="background:var(--white);border:1.5px solid var(--border);border-radius:14px;overflow:hidden">
               <div style="padding:16px 16px 10px"><canvas id="cycle-chart" style="max-height:240px"></canvas></div>
               <div style="padding:8px 16px 12px;background:var(--surf);border-top:1px solid var(--border);font-size:11.5px;color:var(--muted);font-style:italic"><strong style="font-style:normal">Fig. 9.1</strong> — LH, FSH, estrógenos y progesterona a lo largo del ciclo menstrual de 28 días.</div>
             </div>
           </div>
         </div>
-        <div class="ib am"><div class="ib-t">🔑 Menopausia</div>Cuando se alcanza la menopausia, los ovarios dejan de funcionar y la FSH y la LH <strong>aumentan</strong> (desaparece el freno estrogénico del feedback negativo). FSH elevada (&gt;30 mUI/mL) junto con amenorrea de ≥12 meses confirma la menopausia.</div>
+        <div class="ib am"><div class="ib-t">🔑 Menopausia — el feedback negativo en acción</div>
+          En la menopausia los ovarios dejan de funcionar → sin estrógenos el feedback negativo sobre hipotálamo e hipófisis desaparece → LH y FSH se elevan enormemente intentando estimular unos ovarios que ya no responden. Es el mismo mecanismo que vimos en el simulador (escenario "fallo glándula diana"): trófica ↑↑ + efectora ↓.
+        </div>
       </div>
 
       <div id="gon-tab-1" class="tp">
-        <p>En el hombre, el ciclo de liberación es variable a lo largo de todo el día, con mayores oscilaciones de la LH. Las concentraciones de FSH y LH son relativamente constantes después de la pubertad.</p>
+        <p>En el varón las concentraciones de LH y FSH son relativamente constantes tras la pubertad (no hay ciclo mensual). El eje funciona igual que en la mujer pero sin variación cíclica.</p>
         <div class="cmp">
           <div class="cmp-card">
             <div class="cmp-head" style="background:var(--blue-l);color:var(--blue)">LH en el varón</div>
             <div class="cmp-body">
-              <div class="cmp-row"><span class="cmp-lbl">Diana</span><span class="cmp-val">Células de Leydig (testículo)</span></div>
+              <div class="cmp-row"><span class="cmp-lbl">Diana (nivel 3)</span><span class="cmp-val">Células de Leydig (testículo)</span></div>
               <div class="cmp-row"><span class="cmp-lbl">Efecto</span><span class="cmp-val">Producción de <strong>testosterona</strong></span></div>
+              <div class="cmp-row"><span class="cmp-lbl">Feedback</span><span class="cmp-val">Testosterona frena LH y FSH en hipotálamo e hipófisis</span></div>
             </div>
           </div>
           <div class="cmp-card">
             <div class="cmp-head" style="background:var(--teal-l);color:var(--teal)">FSH en el varón</div>
             <div class="cmp-body">
-              <div class="cmp-row"><span class="cmp-lbl">Diana</span><span class="cmp-val">Testículos</span></div>
+              <div class="cmp-row"><span class="cmp-lbl">Diana (nivel 3)</span><span class="cmp-val">Células de Sertoli (testículo)</span></div>
               <div class="cmp-row"><span class="cmp-lbl">Efecto</span><span class="cmp-val"><strong>Espermatogénesis</strong> + proteínas fijadoras de andrógenos</span></div>
+              <div class="cmp-row"><span class="cmp-lbl">Feedback</span><span class="cmp-val">Inhibina (células de Sertoli) frena selectivamente FSH</span></div>
             </div>
           </div>
         </div>
-        <div class="ib ro"><div class="ib-t">Valores bajos de LH y FSH en varón</div>Determinan la causa de un recuento espermático bajo, esterilidad, escaso deseo sexual o poca masa muscular. Indican hipogonadismo secundario (fallo hipotalámico o hipofisario).</div>
+        <div class="ib ro"><div class="ib-t">Valores bajos de LH y FSH en varón</div>
+          Indican que la hipófisis (nivel 2) no está estimulando a los testículos. El resultado es hipogonadismo secundario: testículos sin estímulo → testosterona baja → esterilidad, pérdida de libido, poca masa muscular. Diagnóstico: test de estimulación con GnRH.
+        </div>
       </div>
 
       <div id="gon-tab-2" class="tp">
-        <h4>Alteraciones de las gonadotropinas</h4>
-        <p>Los trastornos que afectan al hipotálamo, la hipófisis o las gónadas pueden ocasionar cantidades alteradas de FSH y LH, provocando infertilidad, alteraciones de los ciclos menstruales, pubertad tardía o pubertad precoz.</p>
+        <h4>Localizando el nivel del fallo — misma lógica que en el simulador</h4>
         <div class="cmp">
           <div class="cmp-card">
-            <div class="cmp-head lo">↓ LH y FSH bajas</div>
+            <div class="cmp-head lo">↓ LH y FSH bajas + ↓ estrógenos/testosterona</div>
             <div class="cmp-body">
-              <div class="cmp-row"><span class="cmp-lbl">Causa</span><span class="cmp-val">Lesiones hipotalámicas o hipofisarias</span></div>
+              <div class="cmp-row"><span class="cmp-lbl">Nivel del fallo</span><span class="cmp-val">Nivel 1 o 2: hipotálamo o hipófisis no activan el eje gonadal</span></div>
               <div class="cmp-row"><span class="cmp-lbl">Nombre</span><span class="cmp-val">Hipogonadismo secundario</span></div>
-              <div class="cmp-row"><span class="cmp-lbl">Acompaña</span><span class="cmp-val">Niveles bajos de hormonas sexuales</span></div>
-              <div class="cmp-row"><span class="cmp-lbl">Diagnóstico</span><span class="cmp-val">Test funcional de estimulación con GnRH</span></div>
+              <div class="cmp-row"><span class="cmp-lbl">Diagnóstico</span><span class="cmp-val">Test de estimulación con GnRH: si LH/FSH suben → el problema es el hipotálamo (nivel 1). Si no suben → el problema es la hipófisis (nivel 2).</span></div>
             </div>
           </div>
           <div class="cmp-card">
-            <div class="cmp-head hi">↑ LH y FSH elevadas</div>
+            <div class="cmp-head hi">↑↑ LH y FSH altas + ↓ estrógenos/testosterona</div>
             <div class="cmp-body">
-              <div class="cmp-row"><span class="cmp-lbl">En niños/as</span><span class="cmp-val">Pubertad precoz (con caracteres 2.rios)</span></div>
-              <div class="cmp-row"><span class="cmp-lbl">En mujeres</span><span class="cmp-val">Fallo ovárico primario, menopausia<br><small>Causas: agenesia ovárica, s. Turner, quimioterapia</small></span></div>
-              <div class="cmp-row"><span class="cmp-lbl">En varones</span><span class="cmp-val">Fallo testicular primario<br><small>Causas: agenesia gonadal, s. Klinefelter, paperas</small></span></div>
+              <div class="cmp-row"><span class="cmp-lbl">Nivel del fallo</span><span class="cmp-val">Nivel 3: gónadas no responden al estímulo → sin feedback negativo → LH/FSH se disparan</span></div>
+              <div class="cmp-row"><span class="cmp-lbl">En mujeres</span><span class="cmp-val">Menopausia, fallo ovárico prematuro (s. Turner, quimioterapia)</span></div>
+              <div class="cmp-row"><span class="cmp-lbl">En varones</span><span class="cmp-val">Fallo testicular primario (s. Klinefelter, paperas, agenesia gonadal)</span></div>
             </div>
           </div>
+        </div>
+        <div style="margin-top:12px;background:var(--surf);border-radius:10px;padding:12px 16px;font-size:13px;color:var(--muted)">
+          📌 ¿Recuerdas el simulador? LH/FSH elevadas + estrógenos bajos = escenario "fallo glándula diana" del eje gonadal. La hipófisis sube la trófica al máximo porque no recibe el feedback negativo de los estrógenos.
         </div>
       </div>
     </div>
@@ -1454,35 +1657,49 @@ tr:hover td{background:var(--cream)}
 <!-- ════ S12: ADH ════ -->
 <section id="s12" class="sec">
   <div class="cw">
-    <div class="eyebrow">⬡ 9.2.6</div>
-    <h2 class="sec-title">Hormona antidiurética (ADH) o Vasopresina</h2>
-    <p class="sec-sub">La <strong>hormona antidiurética (ADH)</strong> o <strong>vasopresina</strong> produce la reabsorción del agua por los túbulos colectores de los riñones, provocando la <strong>concentración de la orina</strong> y el consiguiente aumento de la presión sanguínea. Se produce en el hipotálamo y se libera desde la neurohipófisis.</p>
+    <div class="eyebrow">⬡ 9.2.6 · Fuera del eje clásico</div>
+    <h2 class="sec-title">ADH / Vasopresina: una hormona hipofisaria sin eje trófico</h2>
+    <p class="sec-sub">La ADH tiene una posición especial: se produce en el hipotálamo (nivel 1) y se libera directamente desde la neurohipófisis, pero actúa directamente sobre el riñón sin una glándula diana intermediaria. No sigue el esquema de tres niveles que hemos visto hasta ahora.</p>
 
+    <div style="background:var(--violet-l);border:2px solid var(--violet);border-radius:14px;padding:14px 20px;margin-bottom:18px;font-size:13px;color:var(--muted)">
+      🔗 <strong style="color:var(--violet)">¿Por qué es diferente?</strong> En los ejes que hemos visto (tiroideo, suprarrenal, gonadal, GH), la hipófisis produce una hormona trófica (TSH, ACTH, LH/FSH) que activa una glándula diana. La ADH es distinta: es producida directamente en el hipotálamo como neurohormona (señalización neurocrina, del Paso 5 del repaso) y se libera a la circulación desde la neurohipófisis. Actúa directamente sobre los receptores del riñón. <strong>No hay nivel 3 en el sentido clásico.</strong>
+    </div>
+
+    <p>La <strong>ADH</strong> produce la reabsorción de agua en los túbulos colectores renales, concentrando la orina y aumentando la presión sanguínea. Su estímulo principal es la <strong>hiperosmolalidad plasmática</strong> (sangre demasiado concentrada) y la hipovolemia.</p>
+
+    <h4>Aplicando la lógica del receptor — del Paso 4 del repaso</h4>
     <div class="tw"><table>
-      <tr><th>Trastorno</th><th>ADH plasmática</th><th>Mecanismo</th><th>Consecuencia</th></tr>
+      <tr><th>Trastorno</th><th>ADH plasmática</th><th>Mecanismo — ¿falla la señal o el receptor?</th><th>Consecuencia</th></tr>
       <tr>
         <td><strong>Diabetes insípida central</strong></td>
         <td class="vd">↓ Baja</td>
-        <td>Falta de producción por hipotálamo o de liberación desde la hipófisis</td>
-        <td>Poliuria (orina muy diluida), polidipsia intensa</td>
+        <td>No se produce ADH (hipotálamo/neurohipófisis). La señal no existe. Equivale a "fallo de nivel 1/2" en el eje.</td>
+        <td>Poliuria, polidipsia intensa</td>
       </tr>
       <tr>
         <td><strong>Diabetes insípida nefrogénica</strong></td>
         <td class="vu">↑ Alta</td>
-        <td>El riñón no responde a la ADH (receptor o canal acuaporina disfuncionante)</td>
+        <td>ADH presente pero el riñón no tiene receptor funcional. La señal existe pero la célula diana no la recibe. Como "fallo del receptor" (Paso 4 del repaso).</td>
         <td>Poliuria (ADH alta pero ineficaz)</td>
       </tr>
       <tr>
         <td><strong>SIADH</strong></td>
         <td class="vu">↑↑ Muy alta</td>
-        <td>Hipersecreción inadecuada: ADH elevada sin estímulo osmótico</td>
-        <td>Retención de agua, <strong>hiponatremia</strong>, ↑ osmolalidad urinaria</td>
+        <td>Hipersecreción inadecuada. Equivale a "hipersecreción autónoma" sin feedback correcto.</td>
+        <td>Retención de agua, hiponatremia</td>
       </tr>
     </table></div>
 
-    <div class="ib tl"><div class="ib-t">🔬 Diagnóstico sin medir ADH</div>La prueba de la ADH no suele practicarse en el diagnóstico, ya que con la historia clínica (poliuria y sed intensas) y otras pruebas de laboratorio (osmolalidad e electrolitos en sangre y en orina) se puede establecer el diagnóstico. Además existen pruebas funcionales: <strong>sobrecarga hídrica</strong> (para SIADH) y <strong>prueba de deshidratación</strong> (para diabetes insípida).</div>
+    <div class="ib am"><div class="ib-t">🔑 Cómo distinguir las dos diabetes insípidas — la prueba de desmopresina</div>
+      La prueba de desmopresina (ADH sintética exógena) reproduce exactamente la lógica del Paso 4 del repaso:<br><br>
+      • <strong>DI central</strong>: el riñón tiene receptor funcional pero no recibe señal → al dar ADH exógena, el riñón <em>responde</em>: la orina se concentra ✓<br>
+      • <strong>DI nefrogénica</strong>: el riñón no tiene receptor funcional → al dar ADH exógena, el riñón <em>no responde</em>: la orina sigue diluida ✗<br><br>
+      Esta prueba distingue si el fallo es en la señal (ADH) o en el receptor (riñón).
+    </div>
 
-    <div class="ib am"><div class="ib-t">🔑 Cómo distinguir las dos diabetes insípidas</div>Ambas cursan con poliuria y polidipsia, pero el mecanismo es distinto:<br><br>• <strong>Central</strong>: ADH ↓ → riñón funciona bien pero no recibe señal → responde a ADH exógena (desmopresina)<br>• <strong>Nefrogénica</strong>: ADH ↑ → riñón disfuncionante → no responde a ADH exógena<br><br>La <em>prueba de desmopresina</em> permite distinguirlas.</div>
+    <div class="ib tl"><div class="ib-t">🔬 ¿Se mide la ADH en el laboratorio?</div>
+      Raramente. Con la osmolalidad plasmática y urinaria + electrolitos + clínica (poliuria, sed intensa) suele ser suficiente para el diagnóstico. Las pruebas funcionales (sobrecarga hídrica para SIADH, deshidratación para DI) son más informativas que medir la ADH directamente.
+    </div>
   </div>
 </section>
 
