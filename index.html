@@ -1024,7 +1024,7 @@ tr:hover td{background:var(--cream)}
             <div class="lbar-lbl"><span id="lbl-ef">T3/T4 (tiroides)</span></div>
             <div class="lbar-track"><div class="lbar-fill" id="lb-ef" style="width:40%;background:var(--green)"></div></div>
           </div>
-          <div class="clinica-tag" id="sim-clin" style="background:var(--surf);color:var(--muted)">🔬 TSH normal · T3/T4 normales</div>
+          <div class="clinica-tag" id="sim-clin" style="background:var(--surf);color:var(--muted)">🔬 TSH normal · FT4 normal</div>
           <div id="sim-sint-box" style="display:none;margin-top:8px;background:var(--violet-l);border:1px solid var(--violet);border-radius:8px;padding:9px 13px;font-size:12.5px;color:var(--violet);line-height:1.6">
             <strong style="display:block;font-size:10px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px">Síntomas / Manifestaciones</strong>
             <span id="sim-sint-txt"></span>
@@ -1053,6 +1053,7 @@ tr:hover td{background:var(--cream)}
         <button class="organ-btn" onclick="showOrgan('pancreas',this)"><div class="organ-ico" style="background:var(--rose-l)">🔴</div><div><div class="organ-nm">Páncreas endocrino</div><div class="organ-rl">Glucemia</div></div></button>
         <button class="organ-btn" onclick="showOrgan('gonadas',this)"><div class="organ-ico" style="background:var(--green-l)">🟢</div><div><div class="organ-nm">Gónadas</div><div class="organ-rl">Reproducción</div></div></button>
         <button class="organ-btn" onclick="showOrgan('pineal',this)"><div class="organ-ico" style="background:var(--surf)">🌙</div><div><div class="organ-nm">Pineal</div><div class="organ-rl">Ritmo circadiano</div></div></button>
+        <button class="organ-btn" onclick="showOrgan('higado',this)"><div class="organ-ico" style="background:var(--teal-l)">🫀</div><div><div class="organ-nm">Hígado / tejidos</div><div class="organ-rl">Diana especial · Eje GH</div></div></button>
       </div>
       <div class="organ-detail" id="organ-detail"></div>
     </div>
@@ -1136,7 +1137,7 @@ tr:hover td{background:var(--cream)}
         Se usan cuando la hormona tiene una concentración <strong>relativamente constante</strong> a lo largo del tiempo, o cuando una sola medida es suficiente para orientar el diagnóstico.<br><br>
         <strong>¿Cuándo aplica en el eje?</strong> Para hormonas cuya variación fisiológica es pequeña o no relevante en el contexto clínico.<br><br>
         <strong>Ejemplo:</strong> TSH para cribado tiroideo. La TSH varía poco durante el día y una sola medida refleja bien el estado del eje. Si está elevada → el eje lleva tiempo sin recibir feedback negativo suficiente → tiroides hipoactivo.
-        <div style="margin-top:10px;background:var(--surf);border-radius:8px;padding:9px 12px;font-size:12.5px;color:var(--muted)">📌 Conexión: la TSH es la hormona trófica del eje tiroideo (nivel 2). Una TSH elevada con T4 baja indica fallo en el nivel 3 (tiroides), tal como vimos en el simulador.</div>
+        <div style="margin-top:10px;background:var(--surf);border-radius:8px;padding:9px 12px;font-size:12.5px;color:var(--muted)">📌 Conexión: la TSH es la hormona trófica del eje tiroideo (nivel 2). Una TSH elevada con FT4 baja indica fallo en el nivel 3 (tiroides), tal como vimos en el simulador.</div>
       </div>
     </div>
 
@@ -1297,7 +1298,7 @@ tr:hover td{background:var(--cream)}
           </tr>
           <tr class="t91-detail" id="d91-trh"><td colspan="4">
             <strong>TRH → eje tiroideo (nivel 1→2):</strong> La TRH hipotalámica activa la síntesis y secreción de TSH en la hipófisis. La TSH a su vez activa el tiroides (nivel 3) para producir T3/T4, que frenan la TRH por feedback negativo.<br><br>
-            🔗 <strong>Conexión clínica:</strong> En el hipotiroidismo primario (fallo del tiroides, nivel 3), la T3/T4 baja → desaparece el freno → TRH sube → TSH sube mucho. Además, la TRH elevada también estimula la PRL, lo que puede provocar galactorrea en algunas pacientes con hipotiroidismo no tratado.
+            🔗 <strong>Conexión clínica:</strong> En el hipotiroidismo primario (fallo del tiroides, nivel 3), la FT4 baja → desaparece el freno → TRH sube → TSH sube mucho. Además, la TRH elevada también estimula la PRL, lo que puede provocar galactorrea en algunas pacientes con hipotiroidismo no tratado.
           </td></tr>
 
           <tr class="t91-row" onclick="toggleT91(this,'d91-gnrh')">
@@ -1403,6 +1404,12 @@ tr:hover td{background:var(--cream)}
         La determinación de <strong>IGF-1</strong> (somatomedina C) refleja la secreción integrada de GH a lo largo del tiempo, sin las fluctuaciones pulsátiles. Es estable durante el día, no requiere prueba dinámica para el cribado, y varía según la edad y el sexo. Es el parámetro de elección para el diagnóstico y el seguimiento del tratamiento con GH recombinante.
       </div>
 
+      <div class="ib vi"><div class="ib-t">💡 ¿Por qué la hipoglucemia estimula el eje GH?</div>
+        Cuando la glucosa en sangre baja, el hipotálamo lo interpreta como una <strong>señal de alarma metabólica</strong> y activa dos ejes de forma simultánea: el suprarrenal (para subir la glucemia con cortisol) y el GH (para movilizar combustible alternativo).<br><br>
+        La GH en este contexto actúa como <strong>hormona de contra-regulación</strong>: desvía el metabolismo hacia los ácidos grasos y los aminoácidos para ahorrar glucosa y reservarla para el cerebro. No es su función de crecimiento a largo plazo, sino una respuesta de emergencia metabólica.<br><br>
+        <strong>Aplicación directa en el laboratorio:</strong> la prueba de estimulación de GH con insulina (ITT, <em>insulin tolerance test</em>) aprovecha exactamente este mecanismo. Se provoca hipoglucemia controlada → el hipotálamo responde con GHRH → la hipófisis debería liberar un pico de GH. Si no lo hace, el eje no funciona. Es una de las pruebas más potentes para el diagnóstico de déficit de GH precisamente porque la hipoglucemia es uno de los estímulos fisiológicos más potentes del eje.
+      </div>
+
       <h4>Alteraciones y pruebas diagnósticas — aplicando las estrategias del 9.1</h4>
       <div class="cmp">
         <div class="cmp-card">
@@ -1501,17 +1508,17 @@ tr:hover td{background:var(--cream)}
         <tr>
           <td class="vu">↑ Alta</td><td class="vd">↓ Baja</td>
           <td><strong>Hipotiroidismo primario</strong></td>
-          <td>Nivel 3 (tiroides). T4 baja → sin feedback → hipófisis compensa con más TSH. El tiroides no responde.</td>
+          <td>Nivel 3 (tiroides). FT4 baja → sin feedback → hipófisis compensa con más TSH. El tiroides no responde.</td>
         </tr>
         <tr>
           <td class="vd">↓ Baja</td><td class="vu">↑ Alta</td>
           <td><strong>Hipertiroidismo primario</strong></td>
-          <td>Nivel 3 (tiroides). T4 alta → feedback excesivo → hipófisis se frena → TSH cae. El tiroides produce demasiado.</td>
+          <td>Nivel 3 (tiroides). FT4 alta → feedback excesivo → hipófisis se frena → TSH cae. El tiroides produce demasiado.</td>
         </tr>
         <tr>
           <td class="vd">↓ Baja</td><td class="vd">↓ Baja</td>
           <td><strong>Hipotiroidismo secundario</strong></td>
-          <td>Nivel 2 (hipófisis) o nivel 1 (hipotálamo). La hipófisis no envía TSH → el tiroides no recibe estímulo → T4 baja.</td>
+          <td>Nivel 2 (hipófisis) o nivel 1 (hipotálamo). La hipófisis no envía TSH → el tiroides no recibe estímulo → FT4 baja.</td>
         </tr>
         <tr>
           <td style="color:var(--muted)">Normal</td><td style="color:var(--muted)">Normal</td>
@@ -2185,6 +2192,13 @@ const ORGANS={
       {h:'Melatonina',full:'Melatonina (N-acetil-5-metoxitriptamina)',funcion:'Regula el ritmo circadiano (ciclo sueño-vigilia) y los ritmos estacionales. Su producción aumenta con la oscuridad y disminuye con la luz. También actúa como antioxidante',tipo:'efectora directa',eje:'Circadiano'},
     ],
     nota:'La glándula pineal se regula directamente por la luz a través del nervio óptico, sin pasar por el eje hipotálamo-hipófisis. Por eso es independiente. La melatonina secretada por la glándula pineal es responsable de la adaptación circadiana y estacional (pág. 209).'},
+  higado:{
+    name:'Hígado / tejidos periféricos', role:'Nivel 3 — Eje GH (diana especial)', nivel:'3',
+    c:['var(--teal)','var(--teal-l)'], eje:'GH (caso especial: no es glándula endocrina clásica)',
+    hormonas:[
+      {h:'IGF-1',full:'Factor de crecimiento insulínico tipo 1 (somatomedina C)',funcion:'Producido en el hígado en respuesta a la GH. Media los efectos del crecimiento sobre huesos, cartílagos y tejidos blandos. Estimula la proliferación y diferenciación celular. Su concentración refleja la secreción integrada de GH a lo largo del tiempo.',tipo:'efectora nivel 3',eje:'GH'},
+    ],
+    nota:'⚠️ El hígado no es una glándula endocrina clásica, pero actúa como nivel 3 del eje GH: recibe la señal de la GH hipofisaria y produce IGF-1, que ejerce el efecto biológico real del crecimiento. Por eso en el laboratorio se mide IGF-1 (estable, no pulsátil) y no GH directa (pulsátil, difícil de interpretar con una sola medida). Además la GH actúa directamente sobre tejidos periféricos sin necesitar IGF-1 como intermediario, lo que hace de este eje un caso único respecto al tiroideo, suprarrenal o gonadal.'},
 };
 
 function showOrgan(id,btn){
@@ -2245,12 +2259,12 @@ const AXES={
     estim_titulo:'Estimulación: descenso de temperatura o ayuno prolongado',
     estim_desc:'El frío o el ayuno detectados por el hipotálamo activan la TRH. La hipófisis responde con más TSH, que estimula al tiroides para producir más T3/T4 y así subir el metabolismo basal y la producción de calor.',
     estim_sintomas:'↑ Metabolismo basal · ↑ Temperatura corporal · ↑ Frecuencia cardíaca',
-    estim_clin:'TSH ↑ · T3/T4 ↑ (respuesta fisiológica transitoria)',
+    estim_clin:'TSH ↑ · FT4 ↑ (respuesta fisiológica transitoria)',
     // Escenario feedback
     fb_titulo:'Feedback negativo: T3/T4 frenan el eje',
     fb_desc:'Los niveles altos de T3/T4 son detectados por el hipotálamo y la hipófisis, que reducen la producción de TRH y TSH respectivamente. El eje se autorregula: menos estímulo → tiroides produce menos → se vuelve al equilibrio.',
     // Fallos
-    clin_basal:'TSH normal · T3/T4 normales · metabolismo basal equilibrado',
+    clin_basal:'TSH normal · FT4 normal · metabolismo basal equilibrado',
     clin_fallo_diana:'↑↑ TSH + ↓ FT4 = <strong>hipotiroidismo primario</strong>',
     sint_fallo_diana:'Frío, cansancio, bradicardia, aumento de peso, piel seca, estreñimiento',
     clin_fallo_hipo:'↓ TSH + ↓ FT4 = <strong>hipotiroidismo secundario</strong>',
@@ -2305,18 +2319,18 @@ const AXES={
     desc:'<strong>Eje GH:</strong> GHRH estimula GH · Somatostatina la inhibe → GH (hipófisis) → Hígado/tejidos → IGF-1 → feedback (−) sobre hipotálamo e hipófisis',
     fb:'IGF-1 y GH inhiben hipotálamo e hipófisis',
     estim_titulo:'Estimulación: sueño profundo, ejercicio intenso, hipoglucemia',
-    estim_desc:'La GH se libera sobre todo durante las primeras horas del sueño profundo (sueño de ondas lentas) y en situaciones de ejercicio intenso o hipoglucemia. El hipotálamo secreta GHRH, que activa la hipófisis para liberar GH en pulsos. La GH estimula al hígado a producir IGF-1.',
-    estim_sintomas:'GH ↑↑ (pico nocturno) → IGF-1 ↑ → crecimiento óseo y muscular · síntesis proteica · movilización de grasas',
-    estim_clin:'GH ↑ (pico pulsátil nocturno, no medible de forma útil) · IGF-1 ↑',
-    fb_titulo:'Feedback negativo: IGF-1 y GH frenan el eje',
-    fb_desc:'Los niveles elevados de IGF-1 y la propia GH inhiben la GHRH hipotalámica y estimulan la somatostatina (inhibidor de GH). Esto explica por qué una medida basal de GH durante el día puede ser muy baja incluso en personas sanas: la GH se libera en pulsos nocturnos y la somatostatina la frena el resto del día.',
-    clin_basal:'GH pulsátil (basal diurna muy baja) · IGF-1 normal según edad y sexo',
-    clin_fallo_diana:'IGF-1 ↓ con GH normal o alta = resistencia periférica a GH (infrecuente)',
-    sint_fallo_diana:'Talla baja a pesar de GH normal (síndrome de Laron)',
-    clin_fallo_hipo:'↓ GH + ↓ IGF-1 = <strong>déficit de GH hipofisario</strong>',
+    estim_desc:'La GH se libera sobre todo durante las primeras horas del sueño profundo y en situaciones de ejercicio intenso o hipoglucemia. El hipotálamo secreta GHRH, que activa la hipófisis para liberar GH en pulsos nocturnos. La GH estimula al hígado a producir IGF-1, que media los efectos reales del crecimiento.',
+    estim_sintomas:'GH ↑↑ (pico nocturno pulsátil) → IGF-1 ↑ → crecimiento óseo y muscular · síntesis proteica · movilización de grasas',
+    estim_clin:'⚠️ GH basal no es medible de forma útil (pulsátil). El marcador de laboratorio es IGF-1 ↑',
+    fb_titulo:'Feedback negativo: IGF-1 frena el eje',
+    fb_desc:'El IGF-1 elevado y la propia GH inhiben la GHRH hipotalámica y estimulan la somatostatina. Por eso la GH basal diurna es muy baja incluso en personas sanas: se libera en pulsos nocturnos y la somatostatina la frena el resto del tiempo. Esto hace que la GH basal NO sea un marcador diagnóstico fiable.',
+    clin_basal:'IGF-1 normal según edad y sexo. GH basal diurna baja (no es un marcador útil por su secreción pulsátil)',
+    clin_fallo_diana:'IGF-1 ↓ con GH normal o alta = el hígado no responde a la GH (resistencia periférica, poco frecuente)',
+    sint_fallo_diana:'Talla baja a pesar de producir GH normal. El IGF-1 bajo confirma que la señal no llega al tejido.',
+    clin_fallo_hipo:'IGF-1 ↓ + GH no sube en prueba de estimulación = <strong>déficit de GH hipofisario</strong>',
     sint_fallo_hipo:'En niños: talla baja (enanismo hipofisario), retraso en el desarrollo · En adultos: pérdida de masa muscular, aumento de grasa, fatiga',
-    interp_fallo_diana:'La GH se produce pero el hígado no responde. El IGF-1 está bajo aunque la GH sea normal o alta. Raro, pero importante diferenciarlo del déficit de GH real.',
-    interp_fallo_hipo:'La hipófisis no produce GH suficiente. En niños provoca enanismo hipofisario. Diagnóstico: prueba de estimulación (GH no supera 10 ng/mL con glucagón o insulina).',
+    interp_fallo_diana:'El hígado (nivel 3) no responde a la señal de GH aunque esta esté presente. IGF-1 bajo con GH normal o alta. Diferente al déficit hipofisario, donde la GH tampoco se produce.',
+    interp_fallo_hipo:'La hipófisis no produce GH suficiente → el hígado no recibe señal → IGF-1 bajo. Diagnóstico: prueba de estimulación dinámica (con glucagón o insulina). Si la GH no supera 10 ng/mL → déficit confirmado. NO se diagnostica por GH basal.',
   },
 };
 let currentAxis='tiroideo';
@@ -2399,7 +2413,11 @@ function simSet(sc, btn){
     simDesc=ax.fb_desc||'La hormona efectora elevada frena al hipotálamo y la hipófisis. El eje se autorregula hasta volver al equilibrio.';
   } else if(sc==='fallo_diana'){
     simTitle='Fallo de la glándula diana (nivel 3) · Eje '+currentAxis;
-    simDesc='La glándula diana no produce hormona efectora. Sin efectora, desaparece el freno del feedback → hipotálamo e hipófisis se activan al máximo intentando compensar.';
+    if(currentAxis==='gh'){
+      simDesc='En el eje GH el fallo de nivel 3 es una resistencia periférica: el hígado no responde a la señal de GH aunque esta sea normal o alta. El IGF-1 baja porque la señal no se traduce en producción. Es poco frecuente pero importante distinguirlo del déficit hipofisario.';
+    } else {
+      simDesc='La glándula diana no produce hormona efectora. Sin efectora, desaparece el freno del feedback → hipotálamo e hipófisis se activan al máximo intentando compensar.';
+    }
   } else {
     simTitle='Fallo hipofisario (nivel 2) · Eje '+currentAxis;
     simDesc='La hipófisis no produce la hormona trófica. La glándula diana no recibe estímulo → efectora baja. El hipotálamo también reduce su actividad.';
@@ -2415,7 +2433,10 @@ function simSet(sc, btn){
   let clinText='🔬 ';
   if(sc==='basal')        clinText+=ax.clin_basal;
   else if(sc==='estimulo') clinText+=ax.estim_clin||ax.tr+' ↑ · '+ax.ef+' ↑ (transitorio)';
-  else if(sc==='feedback') clinText+=ax.tr+' ↓ (freno activo) · '+ax.ef+' vuelve a la normalidad';
+  else if(sc==='feedback'){
+    if(currentAxis==='gh') clinText+='IGF-1 frena GHRH y activa somatostatina → GH baja (difícil de medir). Efecto clínico: crecimiento se detiene cuando ya hay suficiente IGF-1.';
+    else clinText+=ax.tr+' ↓ (freno activo) · '+ax.ef+' vuelve a la normalidad';
+  }
   else if(sc==='fallo_diana') clinText+=ax.clin_fallo_diana;
   else if(sc==='fallo_hipo')  clinText+=ax.clin_fallo_hipo;
   clin.innerHTML=clinText;
@@ -2434,11 +2455,21 @@ function simSet(sc, btn){
   else     { sintBox.style.display='none'; }
 
   // Interpretation
-  let interp='La medición simultánea de '+ax.tr+' (trófica) y '+ax.ef+' (efectora) permite localizar el nivel del fallo.';
-  if(sc==='estimulo')    interp='El eje está activado por un estímulo fisiológico real. Los niveles subirán transitoriamente y el feedback negativo los devolverá al equilibrio cuando el estímulo cese.';
-  else if(sc==='feedback') interp='El mecanismo de autorregulación funciona correctamente. Es la base del test de supresión en el laboratorio: si el feedback no actúa, la hormona no baja.';
-  else if(sc==='fallo_diana') interp=ax.interp_fallo_diana;
-  else if(sc==='fallo_hipo')  interp=ax.interp_fallo_hipo;
+  let interp;
+  if(currentAxis==='gh'){
+    // GH axis: GH basal is NOT a useful marker — always reference IGF-1 and dynamic tests
+    if(sc==='basal')       interp='En el eje GH el marcador de laboratorio es el IGF-1, no la GH basal. La GH basal diurna es muy baja incluso en personas sanas por su secreción pulsátil nocturna y no tiene valor diagnóstico aislado.';
+    else if(sc==='estimulo')  interp='Los picos de GH ocurren de noche y no son medibles en la práctica clínica habitual. Lo que sí refleja la activación sostenida del eje es el IGF-1, que sube cuando la GH lleva tiempo elevada.';
+    else if(sc==='feedback')  interp='El feedback del eje GH se evalúa en laboratorio mediante la prueba de supresión con glucosa: si la GH no baja tras tomar glucosa, el eje no frena correctamente → sospecha de acromegalia.';
+    else if(sc==='fallo_diana') interp=ax.interp_fallo_diana;
+    else if(sc==='fallo_hipo')  interp=ax.interp_fallo_hipo;
+  } else {
+    interp='La medición simultánea de '+ax.tr+' (trófica) y '+ax.ef+' (efectora) permite localizar el nivel del fallo.';
+    if(sc==='estimulo')    interp='El eje está activado por un estímulo fisiológico real. Los niveles subirán transitoriamente y el feedback negativo los devolverá al equilibrio cuando el estímulo cese.';
+    else if(sc==='feedback') interp='El mecanismo de autorregulación funciona correctamente. Es la base del test de supresión en el laboratorio: si el feedback no actúa, la hormona no baja.';
+    else if(sc==='fallo_diana') interp=ax.interp_fallo_diana;
+    else if(sc==='fallo_hipo')  interp=ax.interp_fallo_hipo;
+  }
   document.getElementById('sim-interp').textContent=interp;
   // Bars
   const rhFill=document.getElementById('lb-rh');
@@ -2808,7 +2839,7 @@ function doPrint(){
     {n:1,t:'Clasifica: endocrina o exocrina',type:'drag_gland'},
     {n:2,t:'Completa el eje tiroideo',type:'wdrag',slots:['ds6-1','ds6-2','ds6-3','ds6-4','ds6-5','ds6-6'],labels:['Nivel 1 (estructura)','Hormona hipotalámica','Nivel 2 (estructura)','Hormona hipofisaria','Nivel 3 (glándula)','Feedback sobre']},
     {n:3,t:'Empareja glándula ↔ hormona y función',type:'match3'},
-    {n:4,t:'¿Dónde está el fallo en el eje?',type:'quiz',qs:[{lbl:'TSH↑↑ + T4↓ muy baja',id:'q4a'},{lbl:'TSH↓ + T4↓ baja',id:'q4b'},{lbl:'LH↑↑ + FSH↑↑ + estradiol bajo, mujer 51a',id:'q4c'}]},
+    {n:4,t:'¿Dónde está el fallo en el eje?',type:'quiz',qs:[{lbl:'TSH↑↑ + FT4↓ muy baja',id:'q4a'},{lbl:'TSH↓ + FT4↓ baja',id:'q4b'},{lbl:'LH↑↑ + FSH↑↑ + estradiol bajo, mujer 51a',id:'q4c'}]},
     {n:5,t:'Factores hipotalámicos (Tabla 9.1)',type:'wdrag',slots:['ds3-1','ds3-2','ds3-3','ds3-4','ds3-5','ds3-6'],labels:['TRH (abrev.)','Hormonas afectadas','GH-IF (abrev.)','Efecto somatostatina','Efecto dopamina','Hormona inhibida por dopamina']},
     {n:6,t:'Test de conceptos del sistema endocrino',type:'quiz',qs:[{lbl:'Recorrido completo de una hormona',id:'q6a'},{lbl:'Importancia del sistema porta hipofisario',id:'q6b'},{lbl:'¿Por qué la melatonina es especial?',id:'q6c'}]},
   ];
